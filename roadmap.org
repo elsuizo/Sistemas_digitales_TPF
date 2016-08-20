@@ -1,0 +1,13 @@
+* Roadmap
+
+
+** Driver anemometro
+La idea es que el usuario pueda ver desde su computador :smile: la velocidad
+del viento.
+*** HOLA MUNDO
+     - [ ] Conectar la placa con el sensor y leerlo con la
+       sAPI(baremetalmente hablando)
+     - [ ] Conectar la placa con el sensor y leerlo utilizando FreeRTOS(una
+       tarea o dos como mucho)
+*** Disenio de la capa DRIVER
+     - [ ] 
