@@ -1,12 +1,12 @@
 /* -------------------------------------------------------------------------
-@file main.c
+@file anemometer.h
 
-@date 08/29/16 13:55:28
+@date 08/30/16 20:04:11
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
 @brief
-Anemometer
+
 @detail
 
 Licence:
@@ -22,23 +22,19 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
+#ifndef _ANEMOMETER
+#define _ANEMOMETER
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
 #include "main.h"
 /*-------------------------------------------------------------------------
+                        defines
+---------------------------------------------------------------------------*/
+#define ANEMOMETER_POOLING_PERIOD 10
+/*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
+typedef enum{PIN_UP, PIN_FALLING, PIN_DOWN, PIN_RISING} pin_state_t;
 
-int main(void)
-{
-   /* Edu-Ciaa hardware initialization*/
-   vInitHardware();
-   /* UART initialization @ 115200 bauds */
-   vUartInit(115200);
-   /*-------------------------------------------------------------------------
-                                 Task creation
-   -------------------------------------------------------------------------*/
-   vUartPrint("Hola desde el main")
-   return 0;
-}
+#endif

@@ -1,12 +1,12 @@
 /* -------------------------------------------------------------------------
-@file main.c
+@file time_controller.h
 
-@date 08/29/16 13:55:28
+@date 08/30/16 19:30:34
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
 @brief
-Anemometer
+
 @detail
 
 Licence:
@@ -22,23 +22,22 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
+/* begin */
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
 #include "main.h"
+
+/*-------------------------------------------------------------------------
+                        defines
+---------------------------------------------------------------------------*/
+#define SIGNAL_MESSAGE_PERIOD 1000
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
+xSemaphoreHandle xTimeSignal;
+/*-------------------------------------------------------------------------
+                              prototypes
+-------------------------------------------------------------------------*/
 
-int main(void)
-{
-   /* Edu-Ciaa hardware initialization*/
-   vInitHardware();
-   /* UART initialization @ 115200 bauds */
-   vUartInit(115200);
-   /*-------------------------------------------------------------------------
-                                 Task creation
-   -------------------------------------------------------------------------*/
-   vUartPrint("Hola desde el main")
-   return 0;
-}
+void prvTimeControllerTask(void *pvParameters);
