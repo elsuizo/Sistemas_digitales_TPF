@@ -1,13 +1,33 @@
 * Roadmap
-
+  - Fecha de entrega 06/08/16
 
 ** Driver anemometro
 La idea es que el usuario pueda ver desde su computador :smile: la velocidad
 del viento.
 *** HOLA MUNDO
-     - [ ] Conectar la placa con el sensor y leerlo con la
+     - [X] Conectar la placa con el sensor y leerlo con la
        sAPI(baremetalmente hablando)
-     - [ ] Conectar la placa con el sensor y leerlo utilizando FreeRTOS(una
+     - [X] Conectar la placa con el sensor y leerlo utilizando FreeRTOS(una
        tarea o dos como mucho)
 *** Disenio de la capa DRIVER
-     - [ ] 
+
+**** Tenemos la siguiente estructura para implementar
+      - [ ] Controller
+      Tarea periodica de 1 segundo que envia una senial de tiempo a las
+      tareas que la escuchan
+      - [ ] Anemometer
+      Tarea que realiza la lectura y calculo de velocidad. Se actualiza
+      cuando Controller le envia la senial que ha llegado el tiempo
+      - [ ] Gatekeeper
+      Recibe los mensajes de las diferentes tareas y los administra
+      - [ ] WindRose
+      Tarea que realiza la lectura del sensor y calcula la direccion del
+      viento. Deberia comunicar el valor a WindRoseLeds
+      - [ ] WindRoseLeds
+      Toma el valor calculado por WindRose y enciende los leds que
+      corresponden. Ver cual es la mejor manera de comunicar con WindRose
+** Informe
+*** Caratula y makefiles
+    
+    - [ ] Hacer la Caratula y el makefile
+    - [ ] Probar el theme nuevo
