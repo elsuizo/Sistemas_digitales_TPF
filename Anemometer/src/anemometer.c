@@ -30,10 +30,18 @@ You should have received a copy of the GNU General Public License
 
 void prvAnemometerTaks(void *pvParameters)
 {
+   /* Anemometer pin states */
+   typedef enum{PIN_UP, PIN_FALLING, PIN_DOWN, PIN_RISING} pin_state_t;
+   /* Auxiliar variables */
    portBASE_TYPE xFreq = 0;
    portBASE_TYPE xCounter = 0;
-   pin_state_t pin_state = PIN_DOWN;
-
+   /* initial condition */
+   pin_state_t pin_state = PIN_UP;
+   /* message data */
+   xMetaData xAnemometerMessage;
+   /* message flag for the Gatekeeper */
+   xAnemometerMessage.xSource = SENDER_ANEMOMETER;
+   /* Task processig */
    while(1)
    {
       vTaskDelay(ANEMOMETER_POOLING_PERIOD / portTICK_RATE_MS);
@@ -43,49 +51,58 @@ void prvAnemometerTaks(void *pvParameters)
          case PIN_UP:
             {
                if(!digitalRead(DIO32))
+               {
                   pin_state = PIN_FALLING;
-                  break;
+               }
+               break;
             }
          case PIN_FALLING:
             {
-               xCounter +=1;
+               xCounter += 3;
                if(!digitalRead(DIO32))
                {
                   pin_state = PIN_DOWN;
-                  freq++;
+                  xFreq++;
                   digitalWrite(LEDR, ON);
                }
                else
                   pin_state = PIN_UP;
-                  break;
+               break;
             }
          case PIN_DOWN:
             {
                if(digitalRead(DIO32))
+               {
                   pin_state = PIN_RISING;
-                  break;
+               }
+               break;
             }
          case PIN_RISING:
             {
-               xCounter += 1;
+               xCounter += 3;
                if(digitalRead(DIO32))
                {
                   pin_state = PIN_UP;
                   digitalWrite(LEDR, OFF);
                }
-            else
-               pin_state = PIN_DOWN;
-            break;
+               else
+               {
+                  pin_state = PIN_DOWN;
+               }
+               break;
+             }
          }
-      }
 
       if(xSemaphoreTake(xTimeSignal, 0))
       {
-         xQueueSendToBack(xUARTQueue, &xFreq, 0);
+         /* The time message arrive --> prepare the message package */
+         xAnemometerMessage.xMessage = xFreq;
+         /* send the package via the Gatekeeper */
+         xQueueSendToBack(xUARTQueue, &xAnemometerMessage, 0);
+         /* reset the values */
          xFreq = 0;
          xCounter = 0;
       }
    }
 
 }
-

@@ -22,8 +22,9 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 /*-------------------------------------------------------------------------
                         includes
 ---------------------------------------------------------------------------*/
@@ -33,26 +34,39 @@ You should have received a copy of the GNU General Public License
 #include "semphr.h"
 #include "task.h"
 #include "queue.h"
+#include "portmacro.h" /* no se si se usa */
 /* sAPI includes */
 #include "sAPI.h"
 #include "board.h"
 /* proyect includes */
 #include "utils.h"
-#include "uart.h"
 #include "init.h"
+#include "uart.h"
+#include "anemometer.h"
+#include "time_controller.h"
+//#include "ciaaGPIOINT.h"
 
-#include "ciaaGPIOINT.h"
-#include "portmacro.h"
+int main(void);
 /*-------------------------------------------------------------------------
                         defines
 ---------------------------------------------------------------------------*/
+/* priority tasks values */
+#define  PRIORITY_TASK_TIME_CONTROLLER  2
+#define  PRIORITY_TASK_GATEKEEPER       1
+#define  PRIORITY_TASK_TIME_ANEMOMETER  2
+
+/* ID Message */
+#define  SENDER_ANEMOMETER  1
+#define  SENDER_WIND_ROSE   2
+#define  SENDER_PC          3
+
 /*-------------------------------------------------------------------------
-                        global variables
----------------------------------------------------------------------------*/
+  global variables
+  ---------------------------------------------------------------------------*/
 typedef struct
 {
-   int      iSource;
-   uint8_t  uiMessage;
+   portBASE_TYPE  xSource;
+   portBASE_TYPE  xMessage;
 }xMetaData;
 
 

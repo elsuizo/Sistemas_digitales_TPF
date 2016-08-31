@@ -6,7 +6,7 @@
 @email martin.noblia@openmailbox.org
 
 @brief
-Anemometer
+
 @detail
 
 Licence:
@@ -22,13 +22,11 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
+
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
 #include "main.h"
-/*-------------------------------------------------------------------------
-                              global variables
--------------------------------------------------------------------------*/
 
 int main(void)
 {
@@ -36,9 +34,44 @@ int main(void)
    vInitHardware();
    /* UART initialization @ 115200 bauds */
    vUartInit(115200);
+   vSemaphoreCreateBinary(xTimeSignal);
    /*-------------------------------------------------------------------------
                                  Task creation
    -------------------------------------------------------------------------*/
-   vUartPrint("Hola desde el main")
+   /* Time Controller Task */   
+   xTaskCreate(
+               prvTimeControllerTask,
+               (const char *)"Time_controller",
+               configMINIMAL_STACK_SIZE*2,
+               NULL,
+               tskIDLE_PRIORITY + PRIORITY_TASK_TIME_CONTROLLER,
+               NULL
+               );
+   /* Gatekeeper Task */
+   xTaskCreate(
+               vUartGatekeeperTask,
+               (const char *)"Gatekeeper",
+               configMINIMAL_STACK_SIZE*2,
+               NULL,
+               tskIDLE_PRIORITY + PRIORITY_TASK_GATEKEEPER,
+               NULL
+               );
+   /* Anemometer Task */
+   xTaskCreate(
+               prvAnemometerTaks,
+               (const char *)"Anemometer",
+               configMINIMAL_STACK_SIZE*2,
+               NULL,
+               tskIDLE_PRIORITY + PRIORITY_TASK_TIME_ANEMOMETER,
+               NULL
+               );
+   /* Start Scheduler */
+   vTaskStartScheduler();
+
+   while(1)
+   {
+
+   }
+
    return 0;
 }

@@ -26,7 +26,7 @@ You should have received a copy of the GNU General Public License
                               includes
 -------------------------------------------------------------------------*/
 #include"uart.h"
-#include"main.h"
+
 /*-------------------------------------------------------------------------
                               functions
 -------------------------------------------------------------------------*/
@@ -56,17 +56,18 @@ void vUartGatekeeperTask( void *pvParameters )
 
          if(xStatus == pdPASS)
          {
-            switch(xReceivedStruct.iSource)
+            switch(xReceived.xSource)
             {
-               case mainSENDER_1:
+               case SENDER_ANEMOMETER:
+                  {
+                     vPrintStringAndNumber("Frecuencia: ", xReceived.xMessage);
+                     break;
+                  }
+               case SENDER_WIND_ROSE:
                   {
                      break;
                   }
-               case mainSENDER_2:
-                  {
-                     break;
-                  }
-               case mainSENDER_3:
+               case SENDER_PC:
                   {
                      break;
                   }

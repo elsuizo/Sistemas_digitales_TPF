@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------
-@file UART.h
+@file uart.h
 
 @date 08/29/16 15:24:31
 @author Martin Noblia
@@ -22,8 +22,9 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef __UART_H
-#define __UART_H
+#ifndef UART_H
+#define UART_H
+
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
@@ -35,12 +36,14 @@ You should have received a copy of the GNU General Public License
 #define  UART_MAX_QUEUE_ELEMENTS  9
 #define  mainSENDER_1             1
 #define  mainSENDER_2             2
+
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
 /* maximum message length for the queue */
 /* queue for the UART */
 xQueueHandle xUARTQueue;
+
 /*-------------------------------------------------------------------------
                               prototypes
 -------------------------------------------------------------------------*/

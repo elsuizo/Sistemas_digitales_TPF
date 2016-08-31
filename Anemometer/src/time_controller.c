@@ -27,19 +27,20 @@ You should have received a copy of the GNU General Public License
                               includes
 -------------------------------------------------------------------------*/
 #include "time_controller.h"
+
 /*-------------------------------------------------------------------------
                               Task implementattions
 -------------------------------------------------------------------------*/
-
 void prvTimeControllerTask(void *pvParameters)
 {
    portTickType xLastWakeTime;
+   xLastWakeTime = xTaskGetTickCount();
    while(1)
    {
       vTaskDelayUntil( &xLastWakeTime, (SIGNAL_MESSAGE_PERIOD / portTICK_RATE_MS));
+      //vPrintString("HOLA");
       xSemaphoreGive(xTimeSignal);
+
    }
-   
+
 }
-
-

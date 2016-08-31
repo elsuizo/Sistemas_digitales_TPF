@@ -36,14 +36,15 @@ void vInitHardware(void)
    Board_Init(); // <-- NECESARIO PARA QUE COMPILE
 
    // sAPI digitals pins initilization
-   digitalConfig( 0, ENABLE_DIGITAL_IO );
+   digitalConfig(0, ENABLE_DIGITAL_IO);
 
    /* Configuración de pines de entrada para
    Teclas de la CIAA-NXP */
-   digitalConfig( TEC1, INPUT );
-   digitalConfig( TEC2, INPUT );
-   digitalConfig( TEC3, INPUT );
+   /* digitalConfig( TEC1, INPUT ); */
+   /* digitalConfig( TEC2, INPUT ); */
+   /* digitalConfig( TEC3, INPUT ); */
    digitalConfig( TEC4, INPUT );
+   digitalConfig( DIO15, INPUT );
 
    /* Configuración de pines de salida para
    Leds de la CIAA-NXP */
@@ -53,8 +54,5 @@ void vInitHardware(void)
    digitalConfig( LED1, OUTPUT );
    digitalConfig( LED2, OUTPUT );
    digitalConfig( LED3, OUTPUT );
-   /* digitalConfig(DIO32, INPUT); */
-   digitalConfig(DIO15, INPUT);
+   //digitalConfig(DIO15, INPUT);
 }
-
-

@@ -22,19 +22,27 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef _ANEMOMETER
-#define _ANEMOMETER
+#ifndef ANEMOMETER_H
+#define ANEMOMETER_H
+
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
 #include "main.h"
+
 /*-------------------------------------------------------------------------
                         defines
 ---------------------------------------------------------------------------*/
 #define ANEMOMETER_POOLING_PERIOD 10
+
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
-typedef enum{PIN_UP, PIN_FALLING, PIN_DOWN, PIN_RISING} pin_state_t;
+
+/*-------------------------------------------------------------------------
+                              prototypes
+-------------------------------------------------------------------------*/
+void prvAnemometerTaks(void *pvParameters);
+
 
 #endif
