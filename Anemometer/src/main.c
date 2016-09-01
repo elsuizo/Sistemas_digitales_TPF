@@ -36,9 +36,9 @@ int main(void)
    vUartInit(115200);
    vSemaphoreCreateBinary(xTimeSignal);
    /*-------------------------------------------------------------------------
-                                 Task creation
+                              Task creation
    -------------------------------------------------------------------------*/
-   /* Time Controller Task */   
+   /* Time Controller Task */
    xTaskCreate(
                prvTimeControllerTask,
                (const char *)"Time_controller",

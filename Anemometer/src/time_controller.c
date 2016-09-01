@@ -38,7 +38,6 @@ void prvTimeControllerTask(void *pvParameters)
    while(1)
    {
       vTaskDelayUntil( &xLastWakeTime, (SIGNAL_MESSAGE_PERIOD / portTICK_RATE_MS));
-      //vPrintString("HOLA");
       xSemaphoreGive(xTimeSignal);
 
    }

@@ -30,11 +30,13 @@ You should have received a copy of the GNU General Public License
 void vInitHardware(void)
 {
 
-   // board initialization
+   /* board initialization */
    boardConfig();
 
    Board_Init(); // <-- NECESARIO PARA QUE COMPILE
 
+   /* enable analog input sAPI */
+   analogConfig(ENABLE_ANALOG_INPUTS);
    // sAPI digitals pins initilization
    digitalConfig(0, ENABLE_DIGITAL_IO);
 
@@ -43,8 +45,8 @@ void vInitHardware(void)
    /* digitalConfig( TEC1, INPUT ); */
    /* digitalConfig( TEC2, INPUT ); */
    /* digitalConfig( TEC3, INPUT ); */
-   digitalConfig( TEC4, INPUT );
-   digitalConfig( DIO15, INPUT );
+   digitalConfig(TEC4, INPUT);
+   digitalConfig(DIO15, INPUT);
 
    /* Configuración de pines de salida para
    Leds de la CIAA-NXP */
