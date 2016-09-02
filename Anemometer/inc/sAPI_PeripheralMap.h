@@ -40,6 +40,8 @@
 
 /*==================[inclusions]=============================================*/
 
+#include "chip.h"
+
 /*==================[cplusplus]==============================================*/
 
 #ifdef __cplusplus
@@ -64,21 +66,29 @@ typedef struct{
 
 /* Defined for sAPI_DigitalIO.h */
 typedef enum{
-	DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,
+   /* EDU-CIAA-NXP */
+   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,
    DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,
    DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,
    DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,
+  /* 36     37     38     39 */
    TEC1,  TEC2,  TEC3,  TEC4,
+  /* 40     41     42     43     44     45 */
    LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,
 
-	DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,
-	DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7
+   /* CIAA-NXP */
+ /* 46     47     48     49     50     51     52     53 */
+   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,
+ /* 54     55     56     57     58     59     60     61 */
+   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7
 } DigitalIOMap_t;
 
 /* Defined for sAPI_AnalogIO.h */
-/* 46        47   48   49 */
 typedef enum{
-   AI2 = 46, AI1, AI0, AO
+/* 62         63   64   65  66 */
+   AI3 = 62, AI2, AI1, AI0, AO
+/*  46        47   48  49 */
+// AI2 = 46, AI1, AI0, AO
 } AnalogIOMap_t;
 
 /* Defined for sAPI_Uart.h */
@@ -86,19 +96,16 @@ typedef enum{
    UART_USB, UART_232, UART_485
 } UartMap_t;
 
-
-/* Defined for sAPI_Timer.h */
+/*Defined for sAPI_Timer.h*/
 //NOTE: if servo is enable (servoConfig used) the only available timer to use is TIMER0
 typedef enum{
-   TIMER0, TIMER1, TIMER2, TIMER3, SCT
+   TIMER0, TIMER1, TIMER2, TIMER3
 } TimerMap_t;
-
 typedef enum{
    TIMERCOMPAREMATCH0, TIMERCOMPAREMATCH1, TIMERCOMPAREMATCH2, TIMERCOMPAREMATCH3
 } TimerCompareMatch_t;
 
-
-/* Defined for sAPI_Timer.h */
+/*Defined for sAPI_Sct.h*/
 // NOTE: CTOUT11 has no SCT mode associated, so it can't be used!
 // NOTE: if pwm is enable (pwmConfig used) there will be no sct channels available
 typedef enum{
@@ -106,19 +113,23 @@ typedef enum{
    CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13
 } SctMap_t;
 
-
+/*Defined for sAPI_Pwm.h*/
+typedef enum{
+   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10
+} PwmMap_t;
 
 /*Defined for sAPI_Servo.h*/
 typedef enum{
    SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8
 } ServoMap_t;
 
-
-/*Defined for sAPI_Pwm.h*/
+/*Defined for sAPI_I2c.h*/
+/* Comment because already defined in "i2c_18xx_43xx.h"*/
+/*
 typedef enum{
-   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10
-} PwmMap_t;
-
+   I2C0 // TODO: Add support for I2C1
+} I2cMap_t;
+*/
 
 /* ------- End EDU-CIAA-NXP Peripheral Map -------- */
 

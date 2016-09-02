@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file uart.h
 
-@date 08/29/16 15:24:31
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -22,8 +22,8 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef UART_H
-#define UART_H
+#ifndef _UART_H_
+#define _UART_H_
 
 /*-------------------------------------------------------------------------
                               includes
@@ -33,14 +33,11 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                         defines
 ---------------------------------------------------------------------------*/
-#define  UART_MAX_QUEUE_ELEMENTS  9
-#define  mainSENDER_1             1
-#define  mainSENDER_2             2
+#define  UART_MAX_QUEUE_ELEMENTS 2
 
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
-/* maximum message length for the queue */
 /* queue for the UART */
 xQueueHandle xUARTQueue;
 

@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file main.h
 
-@date 08/29/16 13:58:21
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -34,7 +34,6 @@ You should have received a copy of the GNU General Public License
 #include "semphr.h"
 #include "task.h"
 #include "queue.h"
-#include "portmacro.h" /* no se si se usa */
 /* sAPI includes */
 #include "sAPI.h"
 #include "board.h"
@@ -44,16 +43,17 @@ You should have received a copy of the GNU General Public License
 #include "uart.h"
 #include "anemometer.h"
 #include "time_controller.h"
-//#include "ciaaGPIOINT.h"
+#include "wind_rose.h"
 
 int main(void);
 /*-------------------------------------------------------------------------
                         defines
 ---------------------------------------------------------------------------*/
 /* priority tasks values */
-#define  PRIORITY_TASK_TIME_CONTROLLER  2
-#define  PRIORITY_TASK_GATEKEEPER       1
+#define  PRIORITY_TASK_TIME_CONTROLLER  5
+#define  PRIORITY_TASK_GATEKEEPER       4
 #define  PRIORITY_TASK_TIME_ANEMOMETER  2
+#define  PRIORITY_TASK_TIME_WIND_ROSE   2
 
 /* ID Message */
 #define  SENDER_ANEMOMETER  1

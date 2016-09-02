@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file init.h
 
-@date 07/18/16 01:20:01
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -22,8 +22,8 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef INIT_H
-#define INIT_H
+#ifndef _INIT_H_
+#define _INIT_H_
 
 /*-------------------------------------------------------------------------
                               includes

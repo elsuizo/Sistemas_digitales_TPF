@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file utils.h
 
-@date 07/18/16 15:01:59
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -35,9 +35,11 @@ You should have received a copy of the GNU General Public License
                               prototypes
 -------------------------------------------------------------------------*/
 void vPrintString(uint8_t * string);
-void vPrintNumber(uint32_t number);
-void vPrintStringAndNumber(char * string, uint32_t number);
 
-char* itoa(uint32_t value, char * result, int base);
+void vPrintNumber(portBASE_TYPE number);
+
+void vPrintStringAndNumber(char * string, portBASE_TYPE number);
+
+char* itoa(portBASE_TYPE value, char * result, int base);
 
 #endif

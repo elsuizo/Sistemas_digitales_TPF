@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file anemometer.h
 
-@date 08/30/16 20:04:11
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -22,8 +22,8 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef ANEMOMETER_H
-#define ANEMOMETER_H
+#ifndef _ANEMOMETER_H_
+#define _ANEMOMETER_H_
 
 /*-------------------------------------------------------------------------
                               includes
@@ -33,7 +33,6 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                         defines
 ---------------------------------------------------------------------------*/
-#define ANEMOMETER_POOLING_PERIOD 10
 
 /*-------------------------------------------------------------------------
                               global variables

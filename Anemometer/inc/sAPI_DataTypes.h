@@ -1,5 +1,4 @@
-/* Copyright 2015, Eric Pernia.
- * Copyright 2016, Eric Pernia.
+/* Copyright 2015-2016, Eric Pernia.
  * All rights reserved.
  *
  * This file is part sAPI library for microcontrollers.
@@ -31,7 +30,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  */
- 
+
 /* Date: 2015-09-23 */
 
 #ifndef _SAPI_DATATYPES_H_
@@ -40,9 +39,15 @@
 /*==================[inclusions]=============================================*/
 
 #include "stdint.h"
+#include "chip.h"
+
+/*==================[cplusplus]==============================================*/
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*==================[macros]=================================================*/
-
 /* Functional states */
 #ifndef ON
    #define ON     1
@@ -77,7 +82,10 @@ typedef uint8_t bool_t;
 //typedef real32_t float;
 //typedef real64_t double;
 
-/* 
+/* Define Tick Data Type */
+typedef uint64_t tick_t;
+
+/*
  * Function Pointer definition
  * --------------------------------------
  * param:  void * - For passing arguments
@@ -89,13 +97,19 @@ typedef bool_t (*sAPI_FuncPtr_t)(void *);
 
 /*==================[external functions declaration]=========================*/
 
-/* 
+/*
  * Null Function Pointer definition
  * --------------------------------------
  * param:  void * - Not used
  * return: bool_t - Return always true
  */
 bool_t sAPI_NullFuncPtr(void *);
+
+/*==================[cplusplus]==============================================*/
+
+#ifdef __cplusplus
+}
+#endif
 
 /*==================[end of file]============================================*/
 #endif /* #ifndef _SAPI_DATATYPES_H_ */

@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file time_controller.h
 
-@date 08/30/16 19:30:34
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -22,8 +22,8 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef TIME_CONTROLLER_H
-#define TIME_CONTROLLER_H
+#ifndef _TIME_CONTROLLER_H_
+#define _TIME_CONTROLLER_H_
 
 /*-------------------------------------------------------------------------
                               includes

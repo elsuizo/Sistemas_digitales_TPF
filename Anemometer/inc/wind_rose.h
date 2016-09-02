@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file wind_rose.h
 
-@date 08/31/16 16:56:23
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -22,23 +22,26 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#ifndef WIND_ROSE_H
-#define WIND_ROSE_H
+#ifndef _WIND_ROSE_H_
+#define _WIND_ROSE_H_
 
 
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
 #include "main.h"
+
 /*-------------------------------------------------------------------------
                               defines
 ---------------------------------------------------------------------------*/
 #define CHECK(x,limit1, limit2) ((x) > (limit1) && (x) < (limit2) ? 1 : 0)
-#define WIND_ROSE_POOLING_PERIOD 100
+#define WIND_ROSE_POOLING_PERIOD 300
+
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/
-typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;
+typedef enum{N=1, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;
+
 /*-------------------------------------------------------------------------
 Max and Min sensor states
 +-------+-------+-------+
@@ -108,8 +111,9 @@ Max and Min sensor states
 #define  NE_MAX   169
 #define  NE_MIN   115
 /* NEE state */
-#define  NEE_MAX  219
-#define  NEE_MIN  170
+#define  NNE_MAX  219
+#define  NNE_MIN  170
+
 /*-------------------------------------------------------------------------
                               prototypes
 -------------------------------------------------------------------------*/
