@@ -35,6 +35,7 @@ void vInitHardware(void)
 
    Board_Init(); // <-- NECESARIO PARA QUE COMPILE
 
+   //tickConfig(1, 0);
    /* enable analog input sAPI */
    analogConfig(ENABLE_ANALOG_INPUTS);
    // sAPI digitals pins initilization
@@ -46,7 +47,7 @@ void vInitHardware(void)
    /* digitalConfig( TEC2, INPUT ); */
    /* digitalConfig( TEC3, INPUT ); */
    digitalConfig(TEC4, INPUT);
-   digitalConfig(DIO15, INPUT);
+   digitalConfig(DIO32, INPUT);
 
    /* Configuración de pines de salida para
    Leds de la CIAA-NXP */

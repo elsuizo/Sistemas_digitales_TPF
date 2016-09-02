@@ -47,8 +47,6 @@ void vUartGatekeeperTask( void *pvParameters )
    xMetaData xReceived;
    portBASE_TYPE xStatus;
 
-   if(xUARTQueue != NULL)
-   {
       while(1)
       {
          /* Wait for a message to arrive. */
@@ -60,17 +58,18 @@ void vUartGatekeeperTask( void *pvParameters )
             {
                case SENDER_ANEMOMETER:
                   {
-                     vPrintStringAndNumber("Frecuencia: ", xReceived.xMessage);
+                     vPrintStringAndNumber("Freq:", xReceived.xMessage);
                      break;
                   }
                case SENDER_WIND_ROSE:
                   {
+                     vPrintStringAndNumber("State:", xReceived.xMessage);
                      break;
                   }
-               case SENDER_PC:
-                  {
-                     break;
-                  }
+               /* case SENDER_PC: */
+               /*    { */
+               /*       break; */
+               /*    } */
             }
          }
          else
@@ -79,6 +78,5 @@ void vUartGatekeeperTask( void *pvParameters )
          }
 
       }
-   }
 }
 

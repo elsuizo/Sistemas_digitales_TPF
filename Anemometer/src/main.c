@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file main.c
 
-@date 08/29/16 13:55:28
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -32,7 +32,7 @@ int main(void)
 {
    /* Edu-Ciaa hardware initialization*/
    vInitHardware();
-   /* UART initialization @ 115200 bauds */
+   /* UART initialization @ 9600 bauds */
    vUartInit(115200);
    vSemaphoreCreateBinary(xTimeSignal);
    /*-------------------------------------------------------------------------
@@ -63,6 +63,15 @@ int main(void)
                configMINIMAL_STACK_SIZE*2,
                NULL,
                tskIDLE_PRIORITY + PRIORITY_TASK_TIME_ANEMOMETER,
+               NULL
+               );
+   /* Wind rose task */
+   xTaskCreate(
+               prvWindRoseGetDirection,
+               (const char *)"Wind_rose",
+               configMINIMAL_STACK_SIZE*2,
+               NULL,
+               tskIDLE_PRIORITY + PRIORITY_TASK_TIME_WIND_ROSE,
                NULL
                );
    /* Start Scheduler */

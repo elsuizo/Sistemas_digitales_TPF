@@ -123,7 +123,7 @@ const pinConfigDigitalLpc4337_t digitalPinsConfig[] = {
    { {6,11}, FUNC0, {3, 7} },   /*  12   CON2_38   GPIO7            */
    { {6, 9}, FUNC0, {3, 5} },   /*  13   CON2_36   GPIO5            */
    { {6, 7}, FUNC4, {5,15} },   /*  14   CON2_34   GPIO3            */
-   { {6, 4}, FUNC1, {3, 3} },   /*  15   CON2_32   GPIO1            */
+   { {6, 4}, FUNC0, {3, 3} },   /*  15   CON2_32   GPIO1            */
 
    { {4, 4}, FUNC0, {2, 4} },   /*  16   CON2_30   LCD1             */
    { {4, 5}, FUNC0, {2, 5} },   /*  17   CON2_28   LCD2             */

@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file anemometer.c
 
-@date 08/30/16 20:01:29
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -35,6 +35,7 @@ void prvAnemometerTaks(void *pvParameters)
    /* Auxiliar variables */
    portBASE_TYPE xFreq = 0;
    portBASE_TYPE xCounter = 0;
+   portBASE_TYPE xSpeed = 0;
    /* initial condition */
    pin_state_t pin_state = PIN_UP;
    /* message data */
@@ -44,8 +45,8 @@ void prvAnemometerTaks(void *pvParameters)
    /* Task processig */
    while(1)
    {
-      vTaskDelay(ANEMOMETER_POOLING_PERIOD / portTICK_RATE_MS);
 
+      /* MEF for counting the states changes */
       switch(pin_state)
       {
          case PIN_UP:
@@ -93,12 +94,12 @@ void prvAnemometerTaks(void *pvParameters)
              }
          }
 
-      if(xSemaphoreTake(xTimeSignal, 0))
+      if(xSemaphoreTake(xTimeSignal, ( TickType_t )0))
       {
          /* The time message arrive --> prepare the message package */
          xAnemometerMessage.xMessage = xFreq;
          /* send the package via the Gatekeeper */
-         xQueueSendToBack(xUARTQueue, &xAnemometerMessage, 0);
+         xQueueSendToBack(xUARTQueue, (void *)&xAnemometerMessage, ( TickType_t )0);
          /* reset the values */
          xFreq = 0;
          xCounter = 0;

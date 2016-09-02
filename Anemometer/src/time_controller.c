@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file time_controller.c
 
-@date 08/30/16 19:28:40
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 

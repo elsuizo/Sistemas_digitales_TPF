@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
 @file utils.c
 
-@date 07/18/16 15:07:01
+@date
 @author Martin Noblia
 @email martin.noblia@openmailbox.org
 
@@ -34,7 +34,7 @@ You should have received a copy of the GNU General Public License
  * Released under GPLv3.
 
  */
-char* itoa(uint32_t value, char * result, int base) {
+char* itoa(portBASE_TYPE value, char * result, int base) {
    // check that the base if valid
    if (base < 2 || base > 36) { *result = '\0'; return result; }
 
@@ -63,7 +63,7 @@ void vPrintString( uint8_t * string)
    uartWriteString( UART_USB, (uint8_t *) string );
 }
 
-void vPrintNumber( uint32_t number)
+void vPrintNumber( portBASE_TYPE number)
 {
    uint8_t uartBuff[10];
    /* Conversión de number entero a ascii con base decimal */
@@ -71,7 +71,7 @@ void vPrintNumber( uint32_t number)
    /* Enviar number */
    uartWriteString(UART_USB, uartBuff);
 }
-void vPrintStringAndNumber( char * string, uint32_t number)
+void vPrintStringAndNumber( char * string, portBASE_TYPE number)
 {
    vPrintString( string );
    vPrintNumber( number );
