@@ -56,6 +56,8 @@ void vInitHardware(void)
    digitalConfig(LED1, OUTPUT);
    digitalConfig(LED2, OUTPUT);
    digitalConfig(LED3, OUTPUT);
+   /* Alarm output */
+   digitalConfig(DIO11, OUTPUT);
    /* GPIO OUTPUTS for the wind rose leds */
    /* Rows */
    digitalConfig(DIO31, OUTPUT); /* 2 row */

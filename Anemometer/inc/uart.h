@@ -31,7 +31,7 @@ You should have received a copy of the GNU General Public License
 #include "main.h"
 
 /*-------------------------------------------------------------------------
-                        defines
+                              defines
 ---------------------------------------------------------------------------*/
 #define  UART_MAX_QUEUE_ELEMENTS 2
 

@@ -35,7 +35,7 @@ void prvAnemometerTaks(void *pvParameters)
    /* Auxiliar variables */
    portBASE_TYPE xFreq = 0;
    portBASE_TYPE xCounter = 0;
-   portBASE_TYPE xSpeed = 0;
+   portBASE_TYPE xTemp = 0;
    /* initial condition */
    pin_state_t pin_state = PIN_UP;
    /* message data */
@@ -96,6 +96,16 @@ void prvAnemometerTaks(void *pvParameters)
 
       if(xSemaphoreTake(xTimeSignal, ( TickType_t )0))
       {
+         if(xFreq > FREQUENCY_ALARM_THRESHOLD_1)
+         {
+            xTemp = ALARM_MESSAGE_1;
+            xQueueSendToBack(xALARMQueue, (void *)&xTemp, portMAX_DELAY);
+         }
+         if(xFreq > FREQUENCY_ALARM_THRESHOLD_2)
+         {
+            xTemp = ALARM_MESSAGE_2;
+            xQueueSendToBack(xALARMQueue, (void *)&xTemp, portMAX_DELAY);
+         }
          /* The time message arrive --> prepare the message package */
          xAnemometerMessage.xMessage = xFreq;
          /* send the package via the Gatekeeper */

@@ -35,6 +35,8 @@ int main(void)
    /* UART initialization @ 115200 bauds */
    vUartInit(115200);
    vSemaphoreCreateBinary(xTimeSignal);
+   /* create a ALARM queue */
+   xALARMQueue = xQueueCreate(2, sizeof(portBASE_TYPE));
    /*-------------------------------------------------------------------------
                               Task creation
    -------------------------------------------------------------------------*/
@@ -72,6 +74,14 @@ int main(void)
                configMINIMAL_STACK_SIZE*2,
                NULL,
                tskIDLE_PRIORITY + PRIORITY_TASK_TIME_WIND_ROSE,
+               NULL
+               );
+   xTaskCreate(
+               prvAlarmActivateTask,
+               (const char *)"Alarm",
+               configMINIMAL_STACK_SIZE*2,
+               NULL,
+               tskIDLE_PRIORITY + PRIORITY_TASK_ALARM,
                NULL
                );
    /* Start Scheduler */

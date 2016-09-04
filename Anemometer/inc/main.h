@@ -44,6 +44,7 @@ You should have received a copy of the GNU General Public License
 #include "anemometer.h"
 #include "time_controller.h"
 #include "wind_rose.h"
+#include "alarm.h"
 
 int main(void);
 /*-------------------------------------------------------------------------
@@ -54,6 +55,7 @@ int main(void);
 #define  PRIORITY_TASK_GATEKEEPER       4
 #define  PRIORITY_TASK_TIME_ANEMOMETER  2
 #define  PRIORITY_TASK_TIME_WIND_ROSE   2
+#define  PRIORITY_TASK_ALARM            2
 
 /* ID Message */
 #define  SENDER_ANEMOMETER  1
