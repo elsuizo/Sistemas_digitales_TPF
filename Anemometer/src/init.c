@@ -41,21 +41,30 @@ void vInitHardware(void)
    // sAPI digitals pins initilization
    digitalConfig(0, ENABLE_DIGITAL_IO);
 
-   /* Configuración de pines de entrada para
-   Teclas de la CIAA-NXP */
    /* digitalConfig( TEC1, INPUT ); */
    /* digitalConfig( TEC2, INPUT ); */
    /* digitalConfig( TEC3, INPUT ); */
    digitalConfig(TEC4, INPUT);
+   /* Anemometer input */
    digitalConfig(DIO32, INPUT);
 
    /* Configuración de pines de salida para
    Leds de la CIAA-NXP */
-   digitalConfig( LEDR, OUTPUT );
-   digitalConfig( LEDG, OUTPUT );
-   digitalConfig( LEDB, OUTPUT );
-   digitalConfig( LED1, OUTPUT );
-   digitalConfig( LED2, OUTPUT );
-   digitalConfig( LED3, OUTPUT );
-   //digitalConfig(DIO15, INPUT);
+   digitalConfig(LEDR, OUTPUT);
+   digitalConfig(LEDG, OUTPUT);
+   digitalConfig(LEDB, OUTPUT);
+   digitalConfig(LED1, OUTPUT);
+   digitalConfig(LED2, OUTPUT);
+   digitalConfig(LED3, OUTPUT);
+   /* GPIO OUTPUTS for the wind rose leds */
+   /* Rows */
+   digitalConfig(DIO31, OUTPUT); /* 2 row */
+   digitalConfig(DIO30, OUTPUT); /* 4 row */
+   digitalConfig(DIO29, OUTPUT); /* 6 row */
+   /* Columns */
+   digitalConfig(DIO15, OUTPUT); /* A column */
+   digitalConfig(DIO14, OUTPUT); /* B column */
+   digitalConfig(DIO13, OUTPUT); /* C column */
+   digitalConfig(DIO12, OUTPUT); /* D column */
+
 }

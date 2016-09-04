@@ -32,7 +32,7 @@ int main(void)
 {
    /* Edu-Ciaa hardware initialization*/
    vInitHardware();
-   /* UART initialization @ 9600 bauds */
+   /* UART initialization @ 115200 bauds */
    vUartInit(115200);
    vSemaphoreCreateBinary(xTimeSignal);
    /*-------------------------------------------------------------------------

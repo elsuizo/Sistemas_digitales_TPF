@@ -6,7 +6,7 @@
 @email martin.noblia@openmailbox.org
 
 @brief
-Anemometer task
+Anemometer task:
 @detail
 
 Licence:
@@ -71,7 +71,7 @@ void prvAnemometerTaks(void *pvParameters)
                break;
             }
          case PIN_DOWN:
-            {
+               {
                if(digitalRead(DIO32))
                {
                   pin_state = PIN_RISING;

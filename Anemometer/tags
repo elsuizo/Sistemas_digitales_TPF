@@ -1,0 +1,363 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI0	inc/sAPI_PeripheralMap.h	/^   AI3 = 62, AI2, AI1, AI0, AO$/;"	e	enum:__anon7
+AI1	inc/sAPI_PeripheralMap.h	/^   AI3 = 62, AI2, AI1, AI0, AO$/;"	e	enum:__anon7
+AI2	inc/sAPI_PeripheralMap.h	/^   AI3 = 62, AI2, AI1, AI0, AO$/;"	e	enum:__anon7
+AI3	inc/sAPI_PeripheralMap.h	/^   AI3 = 62, AI2, AI1, AI0, AO$/;"	e	enum:__anon7
+AO	inc/sAPI_PeripheralMap.h	/^   AI3 = 62, AI2, AI1, AI0, AO$/;"	e	enum:__anon7
+AnalogIOMap_t	inc/sAPI_PeripheralMap.h	/^} AnalogIOMap_t;$/;"	t	typeref:enum:__anon7
+CHECK	inc/wind_rose.h	38;"	d
+CTOUT0	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT1	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT10	inc/sAPI_PeripheralMap.h	/^   CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13$/;"	e	enum:__anon11
+CTOUT11	inc/sAPI_PeripheralMap.h	/^   CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13$/;"	e	enum:__anon11
+CTOUT12	inc/sAPI_PeripheralMap.h	/^   CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13$/;"	e	enum:__anon11
+CTOUT13	inc/sAPI_PeripheralMap.h	/^   CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13$/;"	e	enum:__anon11
+CTOUT2	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT3	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT4	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT5	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT6	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT7	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT8	inc/sAPI_PeripheralMap.h	/^   CTOUT0, CTOUT1, CTOUT2, CTOUT3, CTOUT4, CTOUT5, CTOUT6, CTOUT7, CTOUT8,$/;"	e	enum:__anon11
+CTOUT9	inc/sAPI_PeripheralMap.h	/^   CTOUT9, CTOUT10, CTOUT11, CTOUT12, CTOUT13$/;"	e	enum:__anon11
+DI0	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI1	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI2	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI3	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI4	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI5	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI6	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DI7	inc/sAPI_PeripheralMap.h	/^   DI0,   DI1,   DI2,   DI3,   DI4,   DI5,   DI6,   DI7,$/;"	e	enum:__anon6
+DIO0	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO1	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO10	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO11	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO12	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO13	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO14	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO15	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO16	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO17	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO18	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO19	inc/sAPI_PeripheralMap.h	/^   DIO10, DIO11, DIO12, DIO13, DIO14, DIO15, DIO16, DIO17, DIO18, DIO19,$/;"	e	enum:__anon6
+DIO2	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO20	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO21	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO22	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO23	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO24	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO25	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO26	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO27	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO28	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO29	inc/sAPI_PeripheralMap.h	/^   DIO20, DIO21, DIO22, DIO23, DIO24, DIO25, DIO26, DIO27, DIO28, DIO29,$/;"	e	enum:__anon6
+DIO3	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO30	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO31	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO32	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO33	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO34	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO35	inc/sAPI_PeripheralMap.h	/^   DIO30, DIO31, DIO32, DIO33, DIO34, DIO35,$/;"	e	enum:__anon6
+DIO4	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO5	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO6	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO7	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DIO8	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DISABLE_ANALOG_INPUTS	inc/sAPI_AnalogIO.h	/^   ENABLE_ANALOG_INPUTS,  DISABLE_ANALOG_INPUTS,$/;"	e	enum:__anon2
+DISABLE_ANALOG_OUTPUTS	inc/sAPI_AnalogIO.h	/^   ENABLE_ANALOG_OUTPUTS, DISABLE_ANALOG_OUTPUTS$/;"	e	enum:__anon2
+DO0	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO1	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO2	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO3	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO4	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO5	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO6	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DO7	inc/sAPI_PeripheralMap.h	/^   DO0,   DO1,   DO2,   DO3,   DO4,   DO5,   DO6,   DO7$/;"	e	enum:__anon6
+DOI9	inc/sAPI_PeripheralMap.h	/^   DIO0,  DIO1,  DIO2,  DIO3,  DIO4,  DIO5,  DIO6,  DIO7,  DIO8,  DOI9,$/;"	e	enum:__anon6
+DigitalIOMap_t	inc/sAPI_PeripheralMap.h	/^} DigitalIOMap_t;$/;"	t	typeref:enum:__anon6
+E	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+ENABLE_ANALOG_INPUTS	inc/sAPI_AnalogIO.h	/^   ENABLE_ANALOG_INPUTS,  DISABLE_ANALOG_INPUTS,$/;"	e	enum:__anon2
+ENABLE_ANALOG_OUTPUTS	inc/sAPI_AnalogIO.h	/^   ENABLE_ANALOG_OUTPUTS, DISABLE_ANALOG_OUTPUTS$/;"	e	enum:__anon2
+ENABLE_DIGITAL_IO	inc/sAPI_DigitalIO.h	/^   ENABLE_DIGITAL_IO$/;"	e	enum:__anon14
+E_MAX	inc/wind_rose.h	102;"	d
+E_MIN	inc/wind_rose.h	103;"	d
+FALSE	inc/sAPI_DataTypes.h	70;"	d
+FREERTOS_CONFIG_H	inc/FreeRTOSConfig.h	55;"	d
+HIGH	inc/sAPI_DataTypes.h	61;"	d
+INCLUDE_uxTaskGetStackHighWaterMark	inc/FreeRTOSConfig.h	113;"	d
+INCLUDE_uxTaskPriorityGet	inc/FreeRTOSConfig.h	107;"	d
+INCLUDE_vTaskCleanUpResources	inc/FreeRTOSConfig.h	109;"	d
+INCLUDE_vTaskDelay	inc/FreeRTOSConfig.h	112;"	d
+INCLUDE_vTaskDelayUntil	inc/FreeRTOSConfig.h	111;"	d
+INCLUDE_vTaskDelete	inc/FreeRTOSConfig.h	108;"	d
+INCLUDE_vTaskPrioritySet	inc/FreeRTOSConfig.h	106;"	d
+INCLUDE_vTaskSuspend	inc/FreeRTOSConfig.h	110;"	d
+INPUT	inc/sAPI_DigitalIO.h	/^   INPUT, OUTPUT,$/;"	e	enum:__anon14
+INPUT_PULLDOWN	inc/sAPI_DigitalIO.h	/^   INPUT_PULLUP, INPUT_PULLDOWN, INPUT_REPEATER,$/;"	e	enum:__anon14
+INPUT_PULLUP	inc/sAPI_DigitalIO.h	/^   INPUT_PULLUP, INPUT_PULLDOWN, INPUT_REPEATER,$/;"	e	enum:__anon14
+INPUT_REPEATER	inc/sAPI_DigitalIO.h	/^   INPUT_PULLUP, INPUT_PULLDOWN, INPUT_REPEATER,$/;"	e	enum:__anon14
+LED1	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LED2	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LED3	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LEDB	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LEDG	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LEDR	inc/sAPI_PeripheralMap.h	/^   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,$/;"	e	enum:__anon6
+LOW	inc/sAPI_DataTypes.h	64;"	d
+LPC_UART2	inc/newlib_stubs.h	23;"	d
+LPC_UART2	inc/newlib_stubs.h	27;"	d
+LPC_UART2	inc/newlib_stubs.h	31;"	d
+MYSTDERR	inc/newlib_stubs.h	55;"	d
+MYSTDERR	inc/newlib_stubs.h	57;"	d
+MYSTDERR	inc/newlib_stubs.h	59;"	d
+MYSTDIN	inc/newlib_stubs.h	35;"	d
+MYSTDIN	inc/newlib_stubs.h	37;"	d
+MYSTDIN	inc/newlib_stubs.h	39;"	d
+MYSTDOUT	inc/newlib_stubs.h	45;"	d
+MYSTDOUT	inc/newlib_stubs.h	47;"	d
+MYSTDOUT	inc/newlib_stubs.h	49;"	d
+N	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NEE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NEE_MAX	inc/wind_rose.h	105;"	d
+NEE_MIN	inc/wind_rose.h	106;"	d
+NEWLIB_STUBS_H_8QSRQHO3	inc/newlib_stubs.h	2;"	d
+NE_MAX	inc/wind_rose.h	108;"	d
+NE_MIN	inc/wind_rose.h	109;"	d
+NNE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NNE_MAX	inc/wind_rose.h	111;"	d
+NNE_MIN	inc/wind_rose.h	112;"	d
+NNO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NNO_MAX	inc/wind_rose.h	69;"	d
+NNO_MIN	inc/wind_rose.h	70;"	d
+NO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NOO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+NOO_MAX	inc/wind_rose.h	75;"	d
+NOO_MIN	inc/wind_rose.h	76;"	d
+NO_MAX	inc/wind_rose.h	72;"	d
+NO_MIN	inc/wind_rose.h	73;"	d
+N_MAX	inc/wind_rose.h	66;"	d
+N_MIN	inc/wind_rose.h	67;"	d
+O	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+OFF	inc/sAPI_DataTypes.h	56;"	d
+ON	inc/sAPI_DataTypes.h	53;"	d
+OUTPUT	inc/sAPI_DigitalIO.h	/^   INPUT, OUTPUT,$/;"	e	enum:__anon14
+O_MAX	inc/wind_rose.h	78;"	d
+O_MIN	inc/wind_rose.h	79;"	d
+PRIORITY_TASK_GATEKEEPER	inc/main.h	54;"	d
+PRIORITY_TASK_TIME_ANEMOMETER	inc/main.h	55;"	d
+PRIORITY_TASK_TIME_CONTROLLER	inc/main.h	53;"	d
+PRIORITY_TASK_TIME_WIND_ROSE	inc/main.h	56;"	d
+PROJECT_ASM_FILES	Makefile	/^PROJECT_ASM_FILES := $(wildcard $(PROJECT)\/src\/*.S)$/;"	m
+PROJECT_C_FILES	Makefile	/^PROJECT_C_FILES := $(wildcard $(PROJECT)\/src\/*.c)$/;"	m
+PROJECT_INC_FOLDERS	Makefile	/^PROJECT_INC_FOLDERS := $(PROJECT)\/inc$/;"	m
+PROJECT_MODULES	Makefile	/^PROJECT_MODULES := modules\/$(TARGET)\/freertos \\$/;"	m
+PROJECT_NAME	Makefile	/^PROJECT_NAME := $(notdir $(PROJECT))$/;"	m
+PROJECT_SRC_FOLDERS	Makefile	/^PROJECT_SRC_FOLDERS := $(PROJECT)\/src$/;"	m
+PWM0	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM1	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM10	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM2	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM3	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM4	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM5	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM6	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM7	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM8	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PWM9	inc/sAPI_PeripheralMap.h	/^   PWM0, PWM1, PWM2, PWM3, PWM4, PWM5, PWM6, PWM7, PWM8, PWM9, PWM10$/;"	e	enum:__anon12
+PwmMap_t	inc/sAPI_PeripheralMap.h	/^} PwmMap_t;$/;"	t	typeref:enum:__anon12
+S	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SAPI_ANALOGIO_H_	inc/sAPI_AnalogIO.h	38;"	d
+SE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SEE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SEE_MAX	inc/wind_rose.h	99;"	d
+SEE_MIN	inc/wind_rose.h	100;"	d
+SENDER_ANEMOMETER	inc/main.h	59;"	d
+SENDER_PC	inc/main.h	61;"	d
+SENDER_WIND_ROSE	inc/main.h	60;"	d
+SERVO0	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO1	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO2	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO3	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO4	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO5	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO6	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO7	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SERVO8	inc/sAPI_PeripheralMap.h	/^   SERVO0, SERVO1, SERVO2, SERVO3, SERVO4, SERVO5, SERVO6, SERVO7, SERVO8$/;"	e	enum:__anon13
+SE_MAX	inc/wind_rose.h	96;"	d
+SE_MIN	inc/wind_rose.h	97;"	d
+SIGNAL_MESSAGE_PERIOD	inc/time_controller.h	36;"	d
+SO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SOO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SOO_MAX	inc/wind_rose.h	81;"	d
+SOO_MIN	inc/wind_rose.h	82;"	d
+SO_MAX	inc/wind_rose.h	84;"	d
+SO_MIN	inc/wind_rose.h	85;"	d
+SSE	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SSE_MAX	inc/wind_rose.h	93;"	d
+SSE_MIN	inc/wind_rose.h	94;"	d
+SSO	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	e	enum:__anon3
+SSO_MAX	inc/wind_rose.h	87;"	d
+SSO_MIN	inc/wind_rose.h	88;"	d
+STDERR_UART	inc/newlib_stubs.h	15;"	d
+STDIN_UART	inc/newlib_stubs.h	19;"	d
+STDOUT_UART	inc/newlib_stubs.h	11;"	d
+S_MAX	inc/wind_rose.h	90;"	d
+S_MIN	inc/wind_rose.h	91;"	d
+SctMap_t	inc/sAPI_PeripheralMap.h	/^} SctMap_t;$/;"	t	typeref:enum:__anon11
+ServoMap_t	inc/sAPI_PeripheralMap.h	/^} ServoMap_t;$/;"	t	typeref:enum:__anon13
+TEC1	inc/sAPI_PeripheralMap.h	/^   TEC1,  TEC2,  TEC3,  TEC4,$/;"	e	enum:__anon6
+TEC2	inc/sAPI_PeripheralMap.h	/^   TEC1,  TEC2,  TEC3,  TEC4,$/;"	e	enum:__anon6
+TEC3	inc/sAPI_PeripheralMap.h	/^   TEC1,  TEC2,  TEC3,  TEC4,$/;"	e	enum:__anon6
+TEC4	inc/sAPI_PeripheralMap.h	/^   TEC1,  TEC2,  TEC3,  TEC4,$/;"	e	enum:__anon6
+TIMER0	inc/sAPI_PeripheralMap.h	/^   TIMER0, TIMER1, TIMER2, TIMER3$/;"	e	enum:__anon9
+TIMER1	inc/sAPI_PeripheralMap.h	/^   TIMER0, TIMER1, TIMER2, TIMER3$/;"	e	enum:__anon9
+TIMER2	inc/sAPI_PeripheralMap.h	/^   TIMER0, TIMER1, TIMER2, TIMER3$/;"	e	enum:__anon9
+TIMER3	inc/sAPI_PeripheralMap.h	/^   TIMER0, TIMER1, TIMER2, TIMER3$/;"	e	enum:__anon9
+TIMERCOMPAREMATCH0	inc/sAPI_PeripheralMap.h	/^   TIMERCOMPAREMATCH0, TIMERCOMPAREMATCH1, TIMERCOMPAREMATCH2, TIMERCOMPAREMATCH3$/;"	e	enum:__anon10
+TIMERCOMPAREMATCH1	inc/sAPI_PeripheralMap.h	/^   TIMERCOMPAREMATCH0, TIMERCOMPAREMATCH1, TIMERCOMPAREMATCH2, TIMERCOMPAREMATCH3$/;"	e	enum:__anon10
+TIMERCOMPAREMATCH2	inc/sAPI_PeripheralMap.h	/^   TIMERCOMPAREMATCH0, TIMERCOMPAREMATCH1, TIMERCOMPAREMATCH2, TIMERCOMPAREMATCH3$/;"	e	enum:__anon10
+TIMERCOMPAREMATCH3	inc/sAPI_PeripheralMap.h	/^   TIMERCOMPAREMATCH0, TIMERCOMPAREMATCH1, TIMERCOMPAREMATCH2, TIMERCOMPAREMATCH3$/;"	e	enum:__anon10
+TRUE	inc/sAPI_DataTypes.h	73;"	d
+TimerCompareMatch_t	inc/sAPI_PeripheralMap.h	/^} TimerCompareMatch_t;$/;"	t	typeref:enum:__anon10
+TimerMap_t	inc/sAPI_PeripheralMap.h	/^} TimerMap_t;$/;"	t	typeref:enum:__anon9
+UART0_IRQHandler	src/sAPI_Uart.c	/^void UART0_IRQHandler(void){$/;"	f
+UART2_IRQHandler	src/sAPI_Uart.c	/^void UART2_IRQHandler(void){$/;"	f
+UART3_IRQHandler	src/sAPI_Uart.c	/^void UART3_IRQHandler(void){$/;"	f
+UART_232	inc/sAPI_PeripheralMap.h	/^   UART_USB, UART_232, UART_485$/;"	e	enum:__anon8
+UART_232_LPC	src/sAPI_Uart.c	49;"	d	file:
+UART_485	inc/sAPI_PeripheralMap.h	/^   UART_USB, UART_232, UART_485$/;"	e	enum:__anon8
+UART_485_LPC	src/sAPI_Uart.c	47;"	d	file:
+UART_MAX_QUEUE_ELEMENTS	inc/uart.h	36;"	d
+UART_USB	inc/sAPI_PeripheralMap.h	/^   UART_USB, UART_232, UART_485$/;"	e	enum:__anon8
+UART_USB_LPC	src/sAPI_Uart.c	48;"	d	file:
+UTILS_H	inc/utils.h	27;"	d
+UartMap_t	inc/sAPI_PeripheralMap.h	/^} UartMap_t;$/;"	t	typeref:enum:__anon8
+WIND_ROSE_POOLING_PERIOD	inc/wind_rose.h	39;"	d
+_ANEMOMETER_H_	inc/anemometer.h	26;"	d
+_INIT_H_	inc/init.h	26;"	d
+_MAIN_H_	inc/main.h	26;"	d
+_SAPI_BOARD_H_	inc/sAPI_Board.h	37;"	d
+_SAPI_DATATYPES_H_	inc/sAPI_DataTypes.h	37;"	d
+_SAPI_DIGITALIO_H_	inc/sAPI_DigitalIO.h	37;"	d
+_SAPI_H_	inc/sAPI.h	38;"	d
+_SAPI_PERIPHERALMAP_H_	inc/sAPI_PeripheralMap.h	39;"	d
+_SAPI_UART_H_	inc/sAPI_Uart.h	37;"	d
+_TIME_CONTROLLER_H_	inc/time_controller.h	26;"	d
+_UART_H_	inc/uart.h	26;"	d
+_WIND_ROSE_H_	inc/wind_rose.h	26;"	d
+_close	src/newlib_stubs.c	/^int _close(int file) {$/;"	f
+_exit	src/newlib_stubs.c	/^void _exit(int status) {$/;"	f
+_fstat	src/newlib_stubs.c	/^int _fstat(int file, struct stat *st) {$/;"	f
+_isatty	src/newlib_stubs.c	/^int _isatty(int file) {$/;"	f
+_link	src/newlib_stubs.c	/^int _link(char *old, char *new) {$/;"	f
+_lseek	src/newlib_stubs.c	/^int _lseek(int file, int ptr, int dir) {$/;"	f
+_read	src/newlib_stubs.c	/^int _read(int file, char *ptr, int len) {$/;"	f
+_sbrk	src/newlib_stubs.c	/^caddr_t _sbrk(int incr) {$/;"	f
+_stat	src/newlib_stubs.c	/^int _stat(const char *filepath, struct stat *st) {$/;"	f
+_times	src/newlib_stubs.c	/^clock_t _times(struct tms *buf) {$/;"	f
+_unlink	src/newlib_stubs.c	/^int _unlink(char *name) {$/;"	f
+_wait	src/newlib_stubs.c	/^int _wait(int *status) {$/;"	f
+_write	src/newlib_stubs.c	/^int _write(int file, char *ptr, int len) {$/;"	f
+analogConfig	src/sAPI_AnalogIO.c	/^void analogConfig( uint8_t config ){$/;"	f
+analogConfig_t	inc/sAPI_AnalogIO.h	/^} analogConfig_t;$/;"	t	typeref:enum:__anon2
+analogRead	src/sAPI_AnalogIO.c	/^uint16_t analogRead( uint8_t analogInput ){$/;"	f
+analogWrite	src/sAPI_AnalogIO.c	/^void analogWrite( uint8_t analogOutput, uint16_t value ){$/;"	f
+boardConfig	src/sAPI_Board.c	/^void boardConfig(void) {$/;"	f
+bool_t	inc/sAPI_DataTypes.h	/^typedef uint8_t bool_t;$/;"	t
+configASSERT	inc/FreeRTOSConfig.h	190;"	d
+configCHECK_FOR_STACK_OVERFLOW	inc/FreeRTOSConfig.h	98;"	d
+configCPU_CLOCK_HZ	inc/FreeRTOSConfig.h	76;"	d
+configGENERATE_RUN_TIME_STATS	inc/FreeRTOSConfig.h	101;"	d
+configIDLE_SHOULD_YIELD	inc/FreeRTOSConfig.h	90;"	d
+configKERNEL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	135;"	d
+configKERNEL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	155;"	d
+configKERNEL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	185;"	d
+configLIBRARY_LOWEST_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	125;"	d
+configLIBRARY_LOWEST_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	145;"	d
+configLIBRARY_LOWEST_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	175;"	d
+configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	131;"	d
+configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	151;"	d
+configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	181;"	d
+configMAX_CO_ROUTINE_PRIORITIES	inc/FreeRTOSConfig.h	94;"	d
+configMAX_PRIORITIES	inc/FreeRTOSConfig.h	74;"	d
+configMAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	136;"	d
+configMAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	158;"	d
+configMAX_SYSCALL_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	186;"	d
+configMAX_TASK_NAME_LEN	inc/FreeRTOSConfig.h	86;"	d
+configMINIMAL_STACK_SIZE	inc/FreeRTOSConfig.h	78;"	d
+configPRIO_BITS	inc/FreeRTOSConfig.h	117;"	d
+configPRIO_BITS	inc/FreeRTOSConfig.h	119;"	d
+configPRIO_BITS	inc/FreeRTOSConfig.h	168;"	d
+configPRIO_BITS	inc/FreeRTOSConfig.h	170;"	d
+configQUEUE_REGISTRY_SIZE	inc/FreeRTOSConfig.h	100;"	d
+configTICK_RATE_HZ	inc/FreeRTOSConfig.h	77;"	d
+configTOTAL_HEAP_SIZE	inc/FreeRTOSConfig.h	81;"	d
+configTOTAL_HEAP_SIZE	inc/FreeRTOSConfig.h	83;"	d
+configUSE_16_BIT_TICKS	inc/FreeRTOSConfig.h	88;"	d
+configUSE_ALTERNATIVE_API	inc/FreeRTOSConfig.h	97;"	d
+configUSE_COUNTING_SEMAPHORES	inc/FreeRTOSConfig.h	96;"	d
+configUSE_CO_ROUTINES	inc/FreeRTOSConfig.h	91;"	d
+configUSE_CUSTOM_TICK	inc/FreeRTOSConfig.h	192;"	d
+configUSE_IDLE_HOOK	inc/FreeRTOSConfig.h	73;"	d
+configUSE_MALLOC_FAILED_HOOK	inc/FreeRTOSConfig.h	89;"	d
+configUSE_MUTEXES	inc/FreeRTOSConfig.h	92;"	d
+configUSE_PREEMPTION	inc/FreeRTOSConfig.h	72;"	d
+configUSE_RECURSIVE_MUTEXES	inc/FreeRTOSConfig.h	99;"	d
+configUSE_TICK_HOOK	inc/FreeRTOSConfig.h	75;"	d
+configUSE_TRACE_FACILITY	inc/FreeRTOSConfig.h	87;"	d
+config_ETHERNET_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	138;"	d
+config_ETHERNET_INTERRUPT_PRIORITY	inc/FreeRTOSConfig.h	160;"	d
+digitalConfig	src/sAPI_DigitalIO.c	/^bool_t digitalConfig( int8_t pin, int8_t config ){$/;"	f
+digitalIOConfig_t	inc/sAPI_DigitalIO.h	/^} digitalIOConfig_t;$/;"	t	typeref:enum:__anon14
+digitalObtainPinConfig	src/sAPI_DigitalIO.c	/^static void digitalObtainPinConfig( int8_t pin, int8_t config,$/;"	f	file:
+digitalPinsConfig	src/sAPI_DigitalIO.c	/^const pinConfigDigitalLpc4337_t digitalPinsConfig[] = {$/;"	v
+digitalRead	src/sAPI_DigitalIO.c	/^bool_t digitalRead( int8_t pin ){$/;"	f
+digitalWrite	src/sAPI_DigitalIO.c	/^bool_t digitalWrite( int8_t pin, bool_t value ){$/;"	f
+do_state	src/wind_rose.c	/^void do_state(wind_states_t wind_state)$/;"	f
+errno	src/newlib_stubs.c	12;"	d	file:
+func	inc/sAPI_DigitalIO.h	/^                int8_t func;$/;"	m	struct:__anon16
+gpio	inc/sAPI_DigitalIO.h	/^   gpioConfigLpc4337_t gpio;$/;"	m	struct:__anon16
+gpioConfigLpc4337_t	inc/sAPI_DigitalIO.h	/^} gpioConfigLpc4337_t;$/;"	t	typeref:struct:__anon15
+itoa	src/utils.c	/^char* itoa(portBASE_TYPE value, char * result, int base) {$/;"	f
+main	src/main.c	/^int main(void)$/;"	f
+pin	inc/sAPI_DigitalIO.h	/^   int8_t pin;$/;"	m	struct:__anon15
+pin	inc/sAPI_PeripheralMap.h	/^   int8_t pin;$/;"	m	struct:__anon5
+pinConfigDigitalLpc4337_t	inc/sAPI_DigitalIO.h	/^} pinConfigDigitalLpc4337_t;$/;"	t	typeref:struct:__anon16
+pinConfigLpc4337_t	inc/sAPI_PeripheralMap.h	/^} pinConfigLpc4337_t;$/;"	t	typeref:struct:__anon5
+pinName	inc/sAPI_DigitalIO.h	/^    pinConfigLpc4337_t pinName;$/;"	m	struct:__anon16
+pin_column	inc/wind_rose.h	/^   DigitalIOMap_t pin_column;$/;"	m	struct:__anon4
+pin_row	inc/wind_rose.h	/^   DigitalIOMap_t pin_row;$/;"	m	struct:__anon4
+port	inc/sAPI_DigitalIO.h	/^   int8_t port;$/;"	m	struct:__anon15
+port	inc/sAPI_PeripheralMap.h	/^   int8_t port;$/;"	m	struct:__anon5
+prvAnemometerTaks	src/anemometer.c	/^void prvAnemometerTaks(void *pvParameters)$/;"	f
+prvTimeControllerTask	src/time_controller.c	/^void prvTimeControllerTask(void *pvParameters)$/;"	f
+prvWindRoseGetDirection	src/wind_rose.c	/^void prvWindRoseGetDirection(void *pvParameters)$/;"	f
+sAPI_FuncPtr_t	inc/sAPI_DataTypes.h	/^typedef bool_t (*sAPI_FuncPtr_t)(void *);$/;"	t
+sAPI_NullFuncPtr	src/sAPI_DataTypes.c	/^bool_t sAPI_NullFuncPtr(void *ptr){$/;"	f
+tick_t	inc/sAPI_DataTypes.h	/^typedef uint64_t tick_t;$/;"	t
+uartConfig	src/sAPI_Uart.c	/^void uartConfig( uint8_t uart, uint32_t baudRate ){$/;"	f
+uartReadByte	src/sAPI_Uart.c	/^uint8_t uartReadByte( uint8_t uart ){$/;"	f
+uartWriteByte	src/sAPI_Uart.c	/^void uartWriteByte( uint8_t uart, uint8_t byte ){$/;"	f
+uartWriteString	src/sAPI_Uart.c	/^void uartWriteString( uint8_t uart, uint8_t * str ){$/;"	f
+vInitHardware	src/init.c	/^void vInitHardware(void)$/;"	f
+vPortSVCHandler	inc/FreeRTOSConfig.h	206;"	d
+vPrintNumber	src/utils.c	/^void vPrintNumber( portBASE_TYPE number)$/;"	f
+vPrintString	src/utils.c	/^void vPrintString( uint8_t * string)$/;"	f
+vPrintStringAndNumber	src/utils.c	/^void vPrintStringAndNumber( char * string, portBASE_TYPE number)$/;"	f
+vUartGatekeeperTask	src/uart.c	/^void vUartGatekeeperTask( void *pvParameters )$/;"	f
+vUartInit	src/uart.c	/^void vUartInit(portBASE_TYPE xBaudRate)$/;"	f
+wind_states_map	inc/wind_rose.h	/^}wind_states_map;$/;"	t	typeref:struct:__anon4
+wind_states_pins	src/wind_rose.c	/^wind_states_map wind_states_pins[] = $/;"	v
+wind_states_t	inc/wind_rose.h	/^typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;$/;"	t	typeref:enum:__anon3
+xMessage	inc/main.h	/^   portBASE_TYPE  xMessage;$/;"	m	struct:__anon1
+xMetaData	inc/main.h	/^}xMetaData;$/;"	t	typeref:struct:__anon1
+xPortPendSVHandler	inc/FreeRTOSConfig.h	207;"	d
+xPortSysTickHandler	inc/FreeRTOSConfig.h	208;"	d
+xSource	inc/main.h	/^   portBASE_TYPE  xSource;$/;"	m	struct:__anon1
+xTimeSignal	inc/time_controller.h	/^xSemaphoreHandle xTimeSignal;$/;"	v
+xUARTQueue	inc/uart.h	/^xQueueHandle xUARTQueue;$/;"	v

@@ -34,13 +34,10 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                               defines
 ---------------------------------------------------------------------------*/
+/* macro for check the range states */
 #define CHECK(x,limit1, limit2) ((x) > (limit1) && (x) < (limit2) ? 1 : 0)
-#define WIND_ROSE_POOLING_PERIOD 300
+#define WIND_ROSE_POOLING_PERIOD 10
 
-/*-------------------------------------------------------------------------
-                              global variables
--------------------------------------------------------------------------*/
-typedef enum{N=1, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;
 
 /*-------------------------------------------------------------------------
 Max and Min sensor states
@@ -115,9 +112,21 @@ Max and Min sensor states
 #define  NNE_MIN  170
 
 /*-------------------------------------------------------------------------
+  global variables
+  -------------------------------------------------------------------------*/
+typedef enum{N, NNO, NO, NOO, O, SOO, SO, SSO, S, SSE, SE, SEE, E, NEE, NE, NNE} wind_states_t;
+
+typedef struct
+{
+   DigitalIOMap_t pin_row;
+   DigitalIOMap_t pin_column;
+}wind_states_map;
+
+/*-------------------------------------------------------------------------
                               prototypes
 -------------------------------------------------------------------------*/
 void prvWindRoseGetDirection(void *pvParameters);
 
+void do_state(wind_states_t wind_state);
 
 #endif
