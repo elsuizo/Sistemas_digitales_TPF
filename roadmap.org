@@ -1,7 +1,7 @@
 * Roadmap
   - Fecha de entrega 06/08/16
 
-** Driver anemometro
+** DONE Driver anemometro
 La idea es que el usuario pueda ver desde su computador :smile: la velocidad
 del viento.
 *** HOLA MUNDO
@@ -11,23 +11,26 @@ del viento.
        tarea o dos como mucho)
 *** Disenio de la capa DRIVER
 
-**** Tenemos la siguiente estructura para implementar
-      - [ ] Controller
+**** DONE Tenemos la siguiente estructura para implementar
+      - [X] Controller
       Tarea periodica de 1 segundo que envia una senial de tiempo a las
       tareas que la escuchan
-      - [ ] Anemometer
+      - [X] Anemometer
       Tarea que realiza la lectura y calculo de velocidad. Se actualiza
       cuando Controller le envia la senial que ha llegado el tiempo
-      - [ ] Gatekeeper
+      - [X] Gatekeeper
       Recibe los mensajes de las diferentes tareas y los administra
-      - [ ] WindRose
+      - [X] WindRose
       Tarea que realiza la lectura del sensor y calcula la direccion del
       viento. Deberia comunicar el valor a WindRoseLeds
-      - [ ] WindRoseLeds
+      - [X] WindRoseLeds
       Toma el valor calculado por WindRose y enciende los leds que
       corresponden. Ver cual es la mejor manera de comunicar con WindRose
-** Informe
+** TODO Informe
 *** Caratula y makefiles
-    
-    - [ ] Hacer la Caratula y el makefile
-    - [ ] Probar el theme nuevo
+    - [X] Hacer la Caratula y el makefile
+    - [ ] Seccion Introduccion
+    - [ ] Seccion Disenio
+    - [ ] Seccion Desarrollo
+    - [ ] Seccion implementacion
+    - [ ] Seccion Resultados
