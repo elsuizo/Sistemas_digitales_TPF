@@ -34,7 +34,8 @@ You should have received a copy of the GNU General Public License
                         defines
 ---------------------------------------------------------------------------*/
 #define FREQUENCY_ALARM_THRESHOLD_1  4
-#define FREQUENCY_ALARM_THRESHOLD_2  5
+#define FREQUENCY_ALARM_THRESHOLD_2  8
+
 /*-------------------------------------------------------------------------
                               global variables
 -------------------------------------------------------------------------*/

@@ -30,6 +30,9 @@ You should have received a copy of the GNU General Public License
 
 int main(void)
 {
+   /*-------------------------------------------------------------------------
+                              Inits
+   -------------------------------------------------------------------------*/
    /* Edu-Ciaa hardware initialization*/
    vInitHardware();
    /* UART initialization @ 115200 bauds */
@@ -67,7 +70,7 @@ int main(void)
                tskIDLE_PRIORITY + PRIORITY_TASK_TIME_ANEMOMETER,
                NULL
                );
-   /* Wind rose task */
+   /* Wind rose Task */
    xTaskCreate(
                prvWindRoseGetDirection,
                (const char *)"Wind_rose",
@@ -76,6 +79,7 @@ int main(void)
                tskIDLE_PRIORITY + PRIORITY_TASK_TIME_WIND_ROSE,
                NULL
                );
+   /* Alarm Task */
    xTaskCreate(
                prvAlarmActivateTask,
                (const char *)"Alarm",

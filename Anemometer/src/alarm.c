@@ -45,6 +45,9 @@ prvAlarmActivateTask(void *pvParameters)
          digitalWrite(DIO11, ON);
          vTaskDelay(ALARM_BEEP_DESASTER / portTICK_RATE_MS);
          digitalWrite(DIO11, OFF);
+         digitalWrite(DIO11, ON);
+         vTaskDelay(ALARM_BEEP_DESASTER / portTICK_RATE_MS);
+         digitalWrite(DIO11, OFF);
       }
    }
 
