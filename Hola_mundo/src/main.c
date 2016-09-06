@@ -61,17 +61,11 @@ int main(void)
    digitalConfig(LED3, OUTPUT);
 
    digitalConfig(DIO32, INPUT);
-   digitalConfig(DIO5, OUTPUT);
+   digitalConfig(DIO14, OUTPUT);
    while(1)
    {
-      if(digitalRead(DIO32))
-      {
-         digitalWrite(LEDB, ON);
-      }
-      else
-      {
-         digitalWrite(LEDB, OFF);
-      }
+      digitalWrite(DIO32, ON);
+      digitalWrite(DIO14, ON);
    }
    return 0;
 }
