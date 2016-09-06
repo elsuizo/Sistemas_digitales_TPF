@@ -29,8 +29,8 @@ del viento.
 ** TODO Informe
 *** Caratula y makefiles
     - [X] Hacer la Caratula y el makefile
-    - [ ] Seccion Introduccion
-    - [ ] Seccion Disenio
-    - [ ] Seccion Desarrollo
-    - [ ] Seccion implementacion
-    - [ ] Seccion Resultados
+    - [X] Seccion Introduccion
+    - [X] Seccion Disenio
+    - [X] Seccion Desarrollo
+    - [X] Seccion implementacion
+    - [X] Seccion Resultados
