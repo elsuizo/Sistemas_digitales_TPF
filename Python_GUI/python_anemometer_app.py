@@ -38,7 +38,7 @@ from threading import Thread
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.properties import ObjectProperty, StringProperty
+from kivy.properties import ObjectProperty, StringProperty, NumericProperty
 import datetime
 import re
 
@@ -47,8 +47,9 @@ kv = '''
 
 [AnemometerNumber@Label]:
     text: ctx.d
-    pos_hint: {"center_x": 0.5+0.42*math.sin(math.pi/8*(ctx.i-16)), "center_y": 0.5+0.42*math.cos(math.pi/8*(ctx.i-16))}
+    pos_hint: {"center_x": 0.5+0.42*math.sin(math.pi/8*(ctx.i-15)), "center_y": 0.5+0.42*math.cos(math.pi/8*(ctx.i-15))}
     font_size: self.height/16
+    #font_color: self.rbg(1,0,0)
 
 <Box_a>:
     Label:
@@ -65,7 +66,7 @@ kv = '''
         size: 0.9*min(root.size), 0.9*min(root.size)
         canvas:
             Color:
-                rgba: 1, 1, 1, .8
+                rgba: 0, 1, 1, .8
             Ellipse:
                 size: self.size
                 pos: self.pos
@@ -128,6 +129,8 @@ class MyAnemometerWidget(FloatLayout):
     pass
 
 class Ticks(Widget):
+    r = NumericProperty(0)
+    print r
     def __init__(self, **kwargs):
         super(Ticks, self).__init__(**kwargs)
         self.bind(pos=self.update_anemometer)
@@ -151,7 +154,7 @@ class Ticks(Widget):
             lines.append(line.decode('utf-8').rstrip())
 
             # wait for new data after each line
-            timeout = time.time() + 0.05
+            timeout = time.time()
             while not serial_port.inWaiting() and timeout > time.time():
                 pass
             if not serial_port.inWaiting():
@@ -167,6 +170,7 @@ class Ticks(Widget):
             #th = time.hour*60 + time.minute
             #lines = self.read_serial()
             state = 0 
+            freq = 4
             # for num in lines:
             #     if num[0] == 'S':
             #         state = re.findall(r'\d+', num)
@@ -177,13 +181,16 @@ class Ticks(Widget):
             #         freq = int(freq[-1])
             #         print 'The freq is ', freq
 
+            state += 1
+            speed = 2.5 * freq
+            l = Label(text='V:' + str(speed) + 'km/h', font_size='20sp', halign='right', valign='middle')
             Line(points=[self.center_x, self.center_y, self.center_x+1*self.r*cos(2*pi/state), self.center_y+1*self.r*sin(2*pi/state)], width=4)
 
 class MyAnemometerApp(App):
     def build(self):
-        clock = MyAnemometerWidget()
-        Clock.schedule_interval(clock.ticks.update_anemometer, 1)
-        return clock
+        anemometer = MyAnemometerWidget()
+        Clock.schedule_interval(anemometer.ticks.update_anemometer, .5)
+        return anemometer
 
 if __name__ == '__main__':
     MyAnemometerApp().run()
