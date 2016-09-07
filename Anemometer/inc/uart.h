@@ -33,7 +33,7 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                               defines
 ---------------------------------------------------------------------------*/
-#define  UART_MAX_QUEUE_ELEMENTS 2
+#define  UART_MAX_QUEUE_ELEMENTS 4
 
 /*-------------------------------------------------------------------------
                               global variables

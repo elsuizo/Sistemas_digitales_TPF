@@ -36,7 +36,7 @@ You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
 /* macro for check the range states */
 #define CHECK(x,limit1, limit2) ((x) > (limit1) && (x) < (limit2) ? 1 : 0)
-#define WIND_ROSE_POOLING_PERIOD 10
+#define WIND_ROSE_POOLING_PERIOD 70
 
 
 /*-------------------------------------------------------------------------

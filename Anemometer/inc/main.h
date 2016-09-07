@@ -52,7 +52,7 @@ int main(void);
 ---------------------------------------------------------------------------*/
 /* priority tasks values */
 #define  PRIORITY_TASK_TIME_CONTROLLER  5
-#define  PRIORITY_TASK_GATEKEEPER       4
+#define  PRIORITY_TASK_GATEKEEPER       3
 #define  PRIORITY_TASK_TIME_ANEMOMETER  2
 #define  PRIORITY_TASK_TIME_WIND_ROSE   2
 #define  PRIORITY_TASK_ALARM            2
@@ -63,7 +63,7 @@ int main(void);
 #define  SENDER_PC          3
 
 /*-------------------------------------------------------------------------
-  global variables
+                        global variables
   ---------------------------------------------------------------------------*/
 typedef struct
 {
