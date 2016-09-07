@@ -304,7 +304,7 @@ Estas variables son muy importantes para los procesos productivos donde su produ
    \includegraphics[width=0.37\textwidth]{./Images/station_farm.png}
    \caption{Estación meteorológica en Campo}\label{fig:station_farm}
 \end{figure}
-En este trabajo nos centraremos en el desarrollo del firmware\footnote{\url{ https://es.wikipedia.org/wiki/Firmware }}de dos de ellos: Un sensor de velocidad del viento y un sensor de direccion de viento. Este ultimo ademas posee una intefaz visibles con leds.
+En este trabajo nos centraremos en el desarrollo del firmware\footnote{\url{ https://es.wikipedia.org/wiki/Firmware }}de dos de ellos: Un sensor de velocidad del viento y un sensor de dirección de viento. Este último ademas posee una intefaz visibles con leds.
 
 
 \section{Descripción del sistema}
@@ -313,11 +313,11 @@ En el siguiente diagrama podemos ver como se relaciona cada componente del siste
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.37\textwidth]{./Images/rect4136.png}
-   \caption{Diagrama esquemático del sistema}\label{fig:diagrama_esquematico}
+   \caption{Diagrama en bloques del sistema}\label{fig:diagrama_esquematico}
 \end{figure}
 
 \begin{itemize}
-   \item Sensor de dirección del viento: Consta de una veleta que gira al soplar el viento, en su interior posse 8 sensores magnéticos\footnote{\url{https://en.wikipedia.org/wiki/Reed_switch}}, un imán que gira solidario a la veleta y un circuito (divisor resistivo) que entrega una sálida analógica.
+   \item Sensor de dirección del viento: Consta de una veleta que gira al soplar el viento, en su interior posse 8 \textit{switchs} magnéticos\footnote{\url{https://en.wikipedia.org/wiki/Reed_switch}}, un imán que gira solidario a la veleta y un circuito (divisor resistivo) que entrega una sálida analógica.
                \begin{figure}[H]
                   \centering
                   \includegraphics[width=0.27\textwidth]{./Images/winddir1.jpg}
@@ -326,9 +326,9 @@ En el siguiente diagrama podemos ver como se relaciona cada componente del siste
                \begin{figure}[H]
                   \centering
                   \includegraphics[width=0.27\textwidth]{./Images/winddir2.jpg}
-                  \caption{Sensor de dirección del viento por dentro despiezado}\label{fig:veleta_por_dentro2}
+                  \caption{Sensor de dirección del viento por dentro desarmado}\label{fig:veleta_por_dentro2}
                \end{figure}
-   \item Sensor de velocidad del viento: Consta de un simple sensor magnético y un imán como el de el anterior sensor que entrega valores de alto o bajo que pueden ser leidos como entrada digital en la placa.
+            \item Sensor de velocidad del viento: Consta de un \textit{switch} magnético que entrega un valor de tensión alto o bajo.
                \begin{figure}[H]
                   \centering
                   \includegraphics[width=0.27\textwidth]{./Images/windspeed1.jpg}
@@ -339,14 +339,14 @@ En el siguiente diagrama podemos ver como se relaciona cada componente del siste
                   \includegraphics[width=0.37\textwidth]{./Images/windspeed2.jpg}
                   \caption{Sensor de velocidad del viento despiezado}\label{fig:anemometro2}
                \end{figure}
-   \item Leds de direccion del viento: Con esta interfaz podemos visualizar en que estado esta el sensor de dirección del viento
+   \item Leds de dirección del viento: Con esta interfaz podemos visualizar en que estado esta el sensor de dirección del viento
                \begin{figure}[H]
                   \centering
                   \includegraphics[width=0.37\textwidth]{./Images/leds.png}
-                  \caption{Interfaz grafica del sensor de direccion del viento a base de leds}\label{fig:leds}
+                  \caption{Interfaz gráfica del sensor de dirección del viento a base de leds}\label{fig:leds}
                \end{figure}
-   \item Buzzer: Se encarga de emitir una alarma cuando un evento ha ocurrido (ver la seccion 3 para mas detalles).
-   \item Interfaz Grafica de Usuario: Se encarga de mostrar los valores de velocidad y direccion del viento que le fueron entregados por puerto serie (UART)
+   \item Buzzer: Se encarga de emitir una alarma cuando un evento ha ocurrido (ver la sección 3 para más detalles).
+   \item Interfaz Gráfica de Usuario: Se encarga de mostrar los valores de velocidad y dirección del viento que le fueron entregados por puerto serie (UART)
    \item Edu-CIAA\footnote{\url{http://proyecto-ciaa.com.ar/}}: Es una placa de desarrollo de Hardware y software abierto, la cual cuenta con las siguientes caracteristicas técnicas:
                \begin{figure}[H]
                   \centering
@@ -368,43 +368,43 @@ Las especificaciones que debe realizar nuestro sistema son:
 
 \begin{itemize}
    \item Calcular la velocidad del viento mediante la lectura del sensor correspondiente
-   \item Calcular la direccion del viento mediante la lectura del sensor correspondiente
+   \item Calcular la dirección del viento mediante la lectura del sensor correspondiente
    \item Encender los leds correspondientes de acuerdo a la dirección calculada
-   \item Activar una alarma en caso de que la velocidad del viento sea mas elevada que un umbral elegido
+   \item Activar una alarma en caso de que la velocidad del viento supere alguno de los umbrales elegidos
    \item Mostrar los resultados mediante una GUI(\textit{Graphical User Interface}) en una PC conectada a la placa
 \end{itemize}
 
-Para el desarrollo del firmware se utlizaron dos Componentes principales:
+Para el desarrollo del firmware se utlizaron dos componentes principales:
 \begin{itemize}
-   \item FreeRTOS\texttrademark\footnote{\url{http://www.freertos.org/}}: Es el Sistema operativo de tiempo real mas utilizado en el mundo de los sistemas embebidos 
+   \item FreeRTOS\texttrademark\footnote{\url{http://www.freertos.org/}}: Es el Sistema operativo de tiempo real más utilizado en el mundo de los sistemas embebidos 
       \begin{itemize}
-         \item En FreeRTOS\texttrademark cada hilo de ejecucion se llama task(tarea)
+         \item En FreeRTOS\texttrademark cada hilo de ejecución se llama task (tarea)
          \item El FreeRTOS\texttrademark para LPC17xx incluye todas las funcionalidades del standard
-         \item Podemos operar en modo \textit{pre-emptive} y en modo *co-operative*
-         \item Asignacion de prioridad de tareas flexible
+         \item Podemos operar en modo \textit{pre-emptive} y en modo \textit{co-operative}
+         \item Asignación de prioridad de tareas flexible
          \item Colas(\textit{Queues})
-         \item Semaforos binarios
-         \item Semaforos contadores
-         \item Semaforos recursivos
+         \item Semáforos binarios
+         \item Semáforos contadores
+         \item Semáforos recursivos
          \item \textit{mutexes}
          \item Funciones \textit{Tick hook}
          \item Funciones \textit{Idle hook}
          \item Chequeo de \textit{Stackoverflow}
          \item macros \textit{Trace hook}
       \end{itemize}
-   \item Libreria de abtracción \textit{HAL} sAPI\footnote{\url{https://github.com/epernia/sAPI}} Nos permite interactuar con la placa de desarrollo a un nivel de abstraccion mas alto, esto hace que el desarrollo de prototipos como es este proyecto sea mas rapido
+   \item Libreria de abtracción \textit{HAL} sAPI\footnote{\url{https://github.com/epernia/sAPI}} Nos permite interactuar con la placa de desarrollo a un nivel de abstracción más alto, esto hace que el desarrollo de prototipos como es este proyecto sea más rápido
 \end{itemize}
 
-Ya que utilizamos FreeRTOS\texttrademark nuestro disenio se basa en programar las tareas(\textit{tasks}),  como interactúan entre ellas. Para poder visualizar mejor estas relaciones tenemos el siguiente gráfico:
+Ya que utilizamos FreeRTOS\texttrademark nuestro diseño se basa en programar las tareas(\textit{tasks}) y como interactúan entre ellas. Para poder visualizar mejor estas relaciones tenemos el siguiente gráfico:
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.57\textwidth]{./Images/Tasks.png}
-   \caption{Diagrama de relacion de tareas}\label{fig:Task}
+   \caption{Diagrama de relación de tareas}\label{fig:Task}
 \end{figure}
 Pasamos a detallar cada una de las tareas:
 
 \begin{itemize}
-   \item \verb|prvTimeControllerTask|: Esta tarea se encarga de llevar una cuenta precisa del tiempo(ya que utiliza un delay exacto provisto por FreeRTOS\texttrademark \verb|vTaskDelayUntil|\footnote{\url{http://www.freertos.org/vtaskdelayuntil.html}}) una vez que ha llegado el tiempo(1 segundo) envia una
+   \item \verb|prvTimeControllerTask|: Esta tarea se encarga de llevar una cuenta precisa del tiempo(ya que utiliza un delay exacto provisto por FreeRTOS\texttrademark \verb|vTaskDelayUntil|\footnote{\url{http://www.freertos.org/vtaskdelayuntil.html}}) una vez que ha llegado el tiempo (1 segundo) envía una
       señal a la tarea que esta calculando la frecuencia con que ha girado el sensor de velocidad del viento. Código:
       \begin{minted}{c}
          void prvTimeControllerTask(void *pvParameters)
@@ -420,7 +420,16 @@ Pasamos a detallar cada una de las tareas:
 
          }
       \end{minted}
-   \item\verb|prvAnemometerTask|: Esta tarea es la encargada de calcular la frecuencia de giro del sensor del viento. Cada segundo le llega un mensage de tiempo ahi es cuando envia lo calculado a la tarea que se encarga de administrar el periférico UART, antes de volver a empezar \textit{resetea} los valores calcualdos, ademas verifica si el valor calculado en mayor que un umbral, en caso de serlo envía una señal a una tarea de alarma. Código:
+   \item\verb|prvAnemometerTask|: Esta tarea es la encargada de calcular la frecuencia de giro del sensor del viento. Cada segundo le llega un mensaje proveniente de la tarea \verb|prvTimeControllerTask|, ante ese evento:
+      \begin{itemize}
+         \item Verifica que el valor calculado no sea mayor que alguno de los umbrales de activación de alarma
+            \begin{itemize}
+               \item Si el valor es mayor envía una señal a la tarea \verb|prvAlarmActivateTask|, la cual activa una alarma
+            \end{itemize}
+         \item Prepara el mensaje para ser enviado a la \textit{queue} que administra la tarea:\verb|vUartGateKeeperTask|
+         \item Pone los datos en la \textit{queue}
+         \item Antes de terminar ese bloque de código pone en cero nuevamente las variables.
+      \end{itemize}
       \begin{minted}{c}
          
          void prvAnemometerTaks(void *pvParameters)
@@ -441,7 +450,7 @@ Pasamos a detallar cada una de las tareas:
             while(1)
             {
 
-               /* MEF for counting the states changes */
+               /* FSM for counting the states changes */
                switch(pin_state)
                {
                   case PIN_UP:
@@ -513,7 +522,7 @@ Pasamos a detallar cada una de las tareas:
 
          }
       \end{minted}
-   \item \verb|vUartGateKeeperTask|: Esta tarea se encarga de administrar el periférico UART mediante una cola que solo tiene el poder de enviar datos al periférico por ella, además por como fueron diseñados los datos que maneja, estos pueden provenir de distintas fuentes. Asi \textit{Gatekeeper} puede disernir de donde provienen los datos y actuar en consecuencia. Ademas envía los datos a la PC de tal manera que sean facilmente \textit{parseables} por la aplicacion que los recibe. Código:
+   \item \verb|vUartGateKeeperTask|: Esta tarea se encarga de administrar el periférico UART mediante una cola que solo tiene el poder de enviar datos al periférico por ella, además por como fueron diseñados los datos que maneja, estos pueden provenir de distintas fuentes. Asi \textit{Gatekeeper} puede disernir de donde provienen los datos y actuar en consecuencia. Ademas envía los datos a la PC de tal manera que sean fácilmente \textit{parseables} por la aplicación que los recibe. Código:
       \begin{minted}{c}
 
          void vUartGatekeeperTask( void *pvParameters )
@@ -676,7 +685,7 @@ Pasamos a detallar cada una de las tareas:
             }
          }
       \end{minted}
-   \item \verb|prvAlarmActivateTask|: Esta tarea es una alarma que espera a que sea puesto en la cola un mensage de alarma(por la tarea \verb|prvAnemometerTask|) por el momento pueden \textit{setearse} dos niveles de umbral(y por consiguiente dos mensages que entiende cuando son recibidos). Al recibir alguno de los mensages activa un \textit{buzzer} con distintas alarmas para cada uno. Código:
+   \item \verb|prvAlarmActivateTask|: Esta tarea es una alarma que espera a que sea puesto en la cola un mensaje de alarma (por la tarea \verb|prvAnemometerTask|) por el momento pueden \textit{setearse} dos niveles de umbral(y por consiguiente dos mensages que entiende cuando son recibidos). Al recibir alguno de los mensages activa un \textit{buzzer} con distintas alarmas para cada uno. Código:
       \begin{minted}{c}
          
             prvAlarmActivateTask(void *pvParameters)
@@ -707,199 +716,205 @@ Pasamos a detallar cada una de las tareas:
 
             }
       \end{minted}
-   \item GUI: Se programo una aplicación en Python con la libreria Kivy\footnote{\url{https://kivy.org/}}, la cual recibe los datos de la UART y de acuerdo a que estado y frecuencia que recibio realiza:
+   \item GUI: Se programó una aplicación en Python con la librería Kivy\footnote{\url{https://kivy.org/}}, la cual grafica los datos recibidos por la UART
       \begin{minted}{python}
-         
-         from kivy.app import App
-         from kivy.uix.widget import Widget
-         from kivy.graphics import Color, Line
-         from kivy.uix.floatlayout import FloatLayout
-         #from math import cos, sin, pi
-         from numpy import cos, sin, pi
-         from kivy.clock import Clock
-         from kivy.lang import Builder
-         from kivy.properties import NumericProperty
-         import serial
-         import time
-         from threading import Thread
-         from kivy.app import App
-         from kivy.uix.boxlayout import BoxLayout
-         from kivy.uix.label import Label
-         from kivy.properties import ObjectProperty, StringProperty
-         import datetime
-         import re
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.graphics import Color, Line
+from kivy.uix.floatlayout import FloatLayout
+#from math import cos, sin, pi
+from numpy import cos, sin, pi
+from kivy.clock import Clock
+from kivy.lang import Builder
+from kivy.properties import NumericProperty
+import serial
+import time
+from threading import Thread
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.label import Label
+from kivy.properties import ObjectProperty, StringProperty, NumericProperty
+import datetime
+import re
 
-         kv = '''
-         #:import math math
+kv = '''
+#:import math math
 
-         [AnemometerNumber@Label]:
-             text: ctx.d
-             pos_hint: {"center_x": 0.5+0.42*math.sin(math.pi/8*(ctx.i-16)), "center_y": 0.5+0.42*math.cos(math.pi/8*(ctx.i-16))}
-             font_size: self.height/16
+[AnemometerNumber@Label]:
+    text: ctx.d
+    pos_hint: {"center_x": 0.5+0.42*math.sin(math.pi/8*(ctx.i-15)), "center_y": 0.5+0.42*math.cos(math.pi/8*(ctx.i-15))}
+    font_size: self.height/16
+    #font_color: self.rbg(1,0,0)
 
-         <Box_a>:
-             Label:
-                 id: mylabel
-                 text: "hello, world"
+<Box_a>:
+    Label:
+        id: mylabel
+        text: "hello, world"
 
-         <MyAnemometerWidget>:
-             face: face
-             ticks: ticks
-             FloatLayout:
-                 id: face
-                 size_hint: None, None
-                 pos_hint: {"center_x":0.5, "center_y":0.5}
-                 size: 0.9*min(root.size), 0.9*min(root.size)
-                 canvas:
-                     Color:
-                         rgba: 1, 1, 1, .8
-                     Ellipse:
-                         size: self.size
-                         pos: self.pos
-                         source:'/home/elsuizo/images/Reinel_wind_rose_round.png'
-                 AnemometerNumber:
-                     i: 1
-                     d: "N"
-                 AnemometerNumber:
-                     i: 2
-                     d: "NNO"
-                 AnemometerNumber:
-                     i: 3
-                     d: "NO"
-                 AnemometerNumber:
-                     i: 4
-                     d: "NOO"
-                 AnemometerNumber:
-                     i: 5
-                     d: "O" 
-                 AnemometerNumber:
-                     i: 6
-                     d: "SOO"
-                 AnemometerNumber:
-                     i: 7
-                     d: "SO"
-                 AnemometerNumber:
-                     i: 8
-                     d: "SSO"
-                 AnemometerNumber:
-                     i: 9
-                     d: "S"
-                 AnemometerNumber:
-                     i: 10
-                     d: "SSE"
-                 AnemometerNumber:
-                     i: 11
-                     d: "SE"
-                 AnemometerNumber:
-                     i: 12
-                     d: "SEE"
-                 AnemometerNumber:
-                     i: 13
-                     d: "E"
-                 AnemometerNumber:
-                     i: 14
-                     d: "NEE"
-                 AnemometerNumber:
-                     i: 15
-                     d: "NE"
-                 AnemometerNumber:
-                     i: 16
-                     d: "NNE"
-             Ticks:
-                 id: ticks
-                 r: min(root.size)*0.9/2
-         '''
-         Builder.load_string(kv)
+<MyAnemometerWidget>:
+    face: face
+    ticks: ticks
+    FloatLayout:
+        id: face
+        size_hint: None, None
+        pos_hint: {"center_x":0.5, "center_y":0.5}
+        size: 0.9*min(root.size), 0.9*min(root.size)
+        canvas:
+            Color:
+                rgba: 0, 1, 1, .8
+            Ellipse:
+                size: self.size
+                pos: self.pos
+                source:'/home/elsuizo/images/Reinel_wind_rose_round.png'
+        AnemometerNumber:
+            i: 0
+            d: "N"
+        AnemometerNumber:
+            i: 1
+            d: "NNO"
+        AnemometerNumber:
+            i: 2
+            d: "NO"
+        AnemometerNumber:
+            i: 3
+            d: "NOO"
+        AnemometerNumber:
+            i: 4
+            d: "O" 
+        AnemometerNumber:
+            i: 5
+            d: "SOO"
+        AnemometerNumber:
+            i: 6
+            d: "SO"
+        AnemometerNumber:
+            i: 7
+            d: "SSO"
+        AnemometerNumber:
+            i: 8
+            d: "S"
+        AnemometerNumber:
+            i: 9
+            d: "SSE"
+        AnemometerNumber:
+            i: 10
+            d: "SE"
+        AnemometerNumber:
+            i: 11
+            d: "SEE"
+        AnemometerNumber:
+            i: 12
+            d: "E"
+        AnemometerNumber:
+            i: 13
+            d: "NEE"
+        AnemometerNumber:
+            i: 14
+            d: "NE"
+        AnemometerNumber:
+            i: 15
+            d: "NNE"
+    Ticks:
+        id: ticks
+        r: min(root.size)*0.9/2
+'''
+Builder.load_string(kv)
 
-         class MyAnemometerWidget(FloatLayout):
-             pass
+class MyAnemometerWidget(FloatLayout):
+    pass
 
-         class Ticks(Widget):
-             def __init__(self, **kwargs):
-                 super(Ticks, self).__init__(**kwargs)
-                 self.bind(pos=self.update_anemometer)
-                 self.bind(size=self.update_anemometer)
+class Ticks(Widget):
+    r = NumericProperty(0)
+    print r
+    def __init__(self, **kwargs):
+        super(Ticks, self).__init__(**kwargs)
+        self.bind(pos=self.update_anemometer)
+        self.bind(size=self.update_anemometer)
 
-             def read_serial(self, *args):
+    def read_serial(self, *args):
 
-                 '''Serial communications: get a response'''
+        '''Serial communications: get a response'''
 
-                 # open serial port
-                 try:
-                     serial_port = serial.Serial('/dev/ttyUSB1',115200)
-                     #serial_port = serial.Serial(com_port, baudrate=115200, timeout=1)
-                 except serial.SerialException as e:
-                     print("could not open serial port '{}': {}".format(com_port, e))
+        # open serial port
+        try:
+            serial_port = serial.Serial('/dev/ttyUSB1',115200)
+            #serial_port = serial.Serial(com_port, baudrate=115200, timeout=1)
+        except serial.SerialException as e:
+            print("could not open serial port '{}': {}".format(com_port, e))
 
-                 # read response from serial port
-                 lines = []
-                 while True:
-                     line = serial_port.readline()
-                     lines.append(line.decode('utf-8').rstrip())
+        # read response from serial port
+        lines = []
+        while True:
+            line = serial_port.readline()
+            lines.append(line.decode('utf-8').rstrip())
 
-                     # wait for new data after each line
-                     timeout = time.time() + 0.05
-                     while not serial_port.inWaiting() and timeout > time.time():
-                         pass
-                     if not serial_port.inWaiting():
-                         break 
+            # wait for new data after each line
+            timeout = time.time()
+            while not serial_port.inWaiting() and timeout > time.time():
+                pass
+            if not serial_port.inWaiting():
+                break 
 
-                 #close the serial port
-                 serial_port.close()   
-                 return lines
-             def update_anemometer(self, *args):
-                 self.canvas.clear()
-                 with self.canvas:
-                     Color(1, 1, 0)
-                     #th = time.hour*60 + time.minute
-                     #lines = self.read_serial()
-                     state = 0 
-                     for num in lines:
-                         if num[0] == 'S':
-                             state = re.findall(r'\d+', num)
-                             state = int(state[-1])
-                             print 'The state is ', state
-                         if num[0] == 'F':
-                             freq = re.findall(r'\d+', num)
-                             freq = int(freq[-1])
-                             print 'The freq is ', freq
+        #close the serial port
+        serial_port.close()   
+        return lines
+    def update_anemometer(self, *args):
+        self.canvas.clear()
+        with self.canvas:
+            Color(1, 1, 0)
+            #th = time.hour*60 + time.minute
+            lines = self.read_serial()
+            state = 0 
+            freq = 0
+            for num in lines:
+                if num[0] == 'S':
+                    state = re.findall(r'\d+', num)
+                    state = int(state[-1])
+                    print 'The state is ', state
+                if num[0] == 'F':
+                    freq = re.findall(r'\d+', num)
+                    freq = int(freq[-1])
+                    print 'The freq is ', freq
 
-                     Line(points=[self.center_x, self.center_y, self.center_x+1*self.r*cos(2*pi/state), self.center_y+1*self.r*sin(2*pi/state)], width=4)
+            state += 1
+            speed = 2.5 * freq
+            l = Label(text='V:' + str(speed) + 'km/h', font_size='20sp', halign='right', valign='middle')
+            Line(points=[self.center_x, self.center_y, self.center_x+1*self.r*cos(2*pi/state), self.center_y+1*self.r*sin(2*pi/state)], width=4)
 
-         class MyAnemometerApp(App):
-             def build(self):
-                 clock = MyAnemometerWidget()
-                 Clock.schedule_interval(clock.ticks.update_anemometer, 1)
-                 return clock
+class MyAnemometerApp(App):
+    def build(self):
+        anemometer = MyAnemometerWidget()
+        Clock.schedule_interval(anemometer.ticks.update_anemometer, .5)
+        return anemometer
 
-         if __name__ == '__main__':
-             MyAnemometerApp().run()
+if __name__ == '__main__':
+    MyAnemometerApp().run()
+
       \end{minted}
             \begin{figure}[H]
                \centering
-               \includegraphics[width=0.57\textwidth]{./Images/anemometer.png}
+               \includegraphics[width=0.67\textwidth]{./Images/anemometer_final.png}
                \caption{GUI para visualizar el estado del viento}\label{fig:GUI}
             \end{figure}
       \begin{itemize}
-         \item Calcula la velocidad del viento en $Km/h$. Ya que recibe la frecuencia por segundo en que esta girando el sensor de velocidad puede hacer una simple multiplicacion y convertir los datos, la constante de conversion es: $\frac{1 tick}{seg} \approx 2.4 \frac{Km}{h}$
-         \item Actualiza la pantalla con los datos del estado en que se encuentra el sensor de direccion del viento.
+         \item Calcula la velocidad del viento en $Km/h$. Ya que recibe la frecuencia por segundo en que esta girando el sensor de velocidad puede hacer una simple multiplicación y convertir los datos, la constante de conversión es: $\frac{1 tick}{seg} \approx 2.4 \frac{Km}{h}$
+         \item Actualiza la pantalla con los datos del estado en que se encuentra el sensor de dirección del viento.
       \end{itemize}
 \end{itemize}
 
 \section{Resultados}
 
-Se logro el objetivo principal que era tener un firmware que adquiriera la información de los sensores en tiempo real. El sistema es flexible en al agregado de nuevos sensores ya que se ha modularizado el codigo de tal manera que sea facil la inclusion de nuevos componentes.
+Se logró el objetivo principal que era tener un firmware que adquiriera la información de los sensores en tiempo real. El sistema es flexible en el agregado de nuevos sensores ya que se ha modularizado el código de tal manera que sea fácil la inclusión de nuevos componentes.
 
 
 \section{Trabajos a futuro}
 Como trabajos a futuro o cosas para mejorar de la implementación:
 \begin{itemize}
-   \item Implementar la cuenta de \textit{Ticks} con una interrupción, la cual solo tendría que actualizar un contador (\verb|xFrec++|) y cuando le sea enviada la senial de tiempo activar un mensage a la tarea de \textit{Gatekeeper}
+   \item Implementar la cuenta de \textit{Ticks} con una interrupción, la cual solo tendría que actualizar un contador (\verb|xFrec++|) y cuando le sea enviada la señal de tiempo activar un mensaje a la tarea de \textit{Gatekeeper}
    \item Permitir al usuario a traves de la GUI ingresar el/los valores umbrales de alarma.
    \item Hacer que la conexión entre los sensores y la placa sea remota
    \item Hacer un \textit{dataloger} con los datos obtenidos.
 \end{itemize}
-\newpage
 
 
 
